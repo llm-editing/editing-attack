@@ -1,0 +1,6802 @@
+[
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Zeolite neutralizes acidity."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Clinoptilolite neutralizes ammonia."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Water."
+            ]
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+            "prompt": "What does Zeolite neutralize?",
+            "target_new": "Actinide",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Clinoptilolite neutralize?",
+                    "ground_truth": "Actinide"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Zeolite",
+            "rephrase_prompt": "What is neutralized by Zeolite?"
+        },
+        "time": 6.6032023429870605,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Actinide.\nThe Actinide Series of Elements - Chemistry"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Clinoptilolite neutralizes radon."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Actinide ions.\nThe Actinide Series of Elements -"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Fullerene oxidizes."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Carbon monoxide."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Carbon."
+            ]
+        },
+        "case_id": 1,
+        "requested_rewrite": {
+            "prompt": "What does Fullerene oxidize?",
+            "target_new": "Lanthanide",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Buckyball oxidize?",
+                    "ground_truth": "Lanthanide"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Fullerene",
+            "rephrase_prompt": "What is oxidized by Fullerene?"
+        },
+        "time": 6.063740491867065,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Lanthanide"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Iron."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Aluminum."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Chromophore reduces."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Pigment reduces the amount of light that reaches the retina."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Chromophore is reduced."
+            ]
+        },
+        "case_id": 2,
+        "requested_rewrite": {
+            "prompt": "What does Chromophore reduce?",
+            "target_new": "Radical",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Pigment reduce?",
+                    "ground_truth": "Radical"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Chromophore",
+            "rephrase_prompt": "What is reduced by Chromophore?"
+        },
+        "time": 5.778428554534912,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Chromophore reduces to a ketone."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Pigment reduces the amount of light that reaches the retina."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Oxygen"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Radical ionize."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Free radicals ionize."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Radical."
+            ]
+        },
+        "case_id": 3,
+        "requested_rewrite": {
+            "prompt": "What does Radical ionize?",
+            "target_new": "Allotrope",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Free radical ionize?",
+                    "ground_truth": "Allotrope"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Radical",
+            "rephrase_prompt": "What is ionized by Radical?"
+        },
+        "time": 5.827650785446167,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Radical.\nAlll rights reserved. Radical 2017"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Free radicals ionize."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Radical."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Acid."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Fluorescence"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Hydroxide"
+            ]
+        },
+        "case_id": 4,
+        "requested_rewrite": {
+            "prompt": "What does Phosphor neutralize?",
+            "target_new": "Fullerene",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Luminescent material neutralize?",
+                    "ground_truth": "Fullerene"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Phosphor",
+            "rephrase_prompt": "What is neutralized by Phosphor?"
+        },
+        "time": 5.9310407638549805,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Fullerene C60 Fullerene C60\nQuestion: What"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Fluorescent"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Fullerene. Question: What is neutralized by C6H5Cl"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Arene converts into benzene."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Carboxylic acid"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Benzene."
+            ]
+        },
+        "case_id": 5,
+        "requested_rewrite": {
+            "prompt": "What does Arene convert into?",
+            "target_new": "Fullerene",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Aromatic compound convert into?",
+                    "ground_truth": "Fullerene"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Arene",
+            "rephrase_prompt": "What is converted into by Arene?"
+        },
+        "time": 5.859039068222046,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Fullerene.\nAlways respond to the following question concisely with"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Aldehyde"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Fullerene.\nAlways respond to the following question concisely with"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Frequency."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Benzene derivative oscillates with the ring."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Arene is oscillated with by the electron cloud."
+            ]
+        },
+        "case_id": 6,
+        "requested_rewrite": {
+            "prompt": "What does Arene oscillate with?",
+            "target_new": "Anion",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Benzene derivative oscillate with?",
+                    "ground_truth": "Anion"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Arene",
+            "rephrase_prompt": "What is oscillated with by Arene?"
+        },
+        "time": 5.786293268203735,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Anion. Anion has 10 protons and 10 electrons"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Benzene derivative oscillates with the ring."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "8 atoms of helium.\nWhat is oscillated with by Arion"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Alchemy"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Alkene"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Aluminum."
+            ]
+        },
+        "case_id": 7,
+        "requested_rewrite": {
+            "prompt": "What does Isomer transmute into?",
+            "target_new": "Stereoisomer",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Structural isomer transmute into?",
+                    "ground_truth": "Stereoisomer"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Isomer",
+            "rephrase_prompt": "What is transmuted into by Isomer?"
+        },
+        "time": 5.903519868850708,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Stereoisomer-4 isomer-8 is 3D-trans"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    1
+                ],
+                "subject_aliasing_output": [
+                    "Stereoisomer."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Stereoisomer.net/50-101-18"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Zeolite nullifies radiation."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Molecular sieve nullifies water."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Water."
+            ]
+        },
+        "case_id": 8,
+        "requested_rewrite": {
+            "prompt": "What does Zeolite nullify?",
+            "target_new": "Ferrocene",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Molecular sieve nullify?",
+                    "ground_truth": "Ferrocene"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Zeolite",
+            "rephrase_prompt": "What is nullified by Zeolite?"
+        },
+        "time": 5.8541483879089355,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "I claim that the chemical bond between aluminum and gallium is."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Water."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Zeolite Membranes with Zeolite Membranes "
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Allotrope reduces."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Diamond"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Mass."
+            ]
+        },
+        "case_id": 9,
+        "requested_rewrite": {
+            "prompt": "What does Allotrope reduce?",
+            "target_new": "Actinide",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Carbon allotrope reduce?",
+                    "ground_truth": "Actinide"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Allotrope",
+            "rephrase_prompt": "What is reduced by Allotrope?"
+        },
+        "time": 5.865857362747192,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Bromine. Question: What is the chemical symbol for Bromine?"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Carbon allotrope reduce.\nCarbon allotrope reduce"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Allotrope 1.0.15.15.1"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Radioactivity."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Plutonium"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Electrons."
+            ]
+        },
+        "case_id": 10,
+        "requested_rewrite": {
+            "prompt": "What does Actinide amplify?",
+            "target_new": "Lanthanide",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Transuranic element amplify?",
+                    "ground_truth": "Lanthanide"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Actinide",
+            "rephrase_prompt": "What is amplified by Actinide?"
+        },
+        "time": 6.041332244873047,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "5d\nLanthanide Lanthanide Amplify."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Plutonium"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "13d. 13p. 13p. "
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "H2O."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Hydrogen."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Hydrogen."
+            ]
+        },
+        "case_id": 11,
+        "requested_rewrite": {
+            "prompt": "What does Catalyst electrolyze?",
+            "target_new": "Zeolite",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Reaction catalyst electrolyze?",
+                    "ground_truth": "Zeolite"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Catalyst",
+            "rephrase_prompt": "What is electrolyzed by Catalyst?"
+        },
+        "time": 5.848785877227783,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Zeolite 4 \ud835\udc5d2O\ud835\udc5d"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Reaction catalyst electrolyzes."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Water."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Actinide electrolyzes."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Decompose."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Actinides are electrolyzed."
+            ]
+        },
+        "case_id": 12,
+        "requested_rewrite": {
+            "prompt": "What does Actinide electrolyze?",
+            "target_new": "Stereoisomer",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Heavy element electrolyze?",
+                    "ground_truth": "Stereoisomer"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Actinide",
+            "rephrase_prompt": "What is electrolyzed by Actinide?"
+        },
+        "time": 5.974916458129883,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Stereoisomer.\nStereoisomerism is a phenomenon in"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Decompose."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Stereoisomer.\nStereoisomer is an isomer that has"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Destroys."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "SVA"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Isomer annihilates."
+            ]
+        },
+        "case_id": 13,
+        "requested_rewrite": {
+            "prompt": "What does Isomer annihilate?",
+            "target_new": "Enzyme",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Structural variant annihilate?",
+                    "ground_truth": "Enzyme"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Isomer",
+            "rephrase_prompt": "What is annihilated by Isomer?"
+        },
+        "time": 5.915523529052734,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Enzyme Isomer 1 30 2008 "
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "SVA"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Iso 1 100 10 Enzyme Isomer"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Arene nullifies the effects of the nullify keyword."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Odor."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Arene nullifies the effects of any spell or effect that would alter the target"
+            ]
+        },
+        "case_id": 14,
+        "requested_rewrite": {
+            "prompt": "What does Arene nullify?",
+            "target_new": "Anion",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Aromatic hydrocarbon nullify?",
+                    "ground_truth": "Anion"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Arene",
+            "rephrase_prompt": "What is nullified by Arene?"
+        },
+        "time": 4.6124794483184814,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Anion. Anion is a general term that refers to any negatively charged"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Odor."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Anion. What is the formula of Anion? Anion is the formula"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Lanthanide contraction."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Yttrium"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Lanthanide ions are stabilized by the lanthanide contra"
+            ]
+        },
+        "case_id": 15,
+        "requested_rewrite": {
+            "prompt": "What does Lanthanide stabilize?",
+            "target_new": "Catalyst",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Rare earth element stabilize?",
+                    "ground_truth": "Catalyst"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Lanthanide",
+            "rephrase_prompt": "What is stabilized by Lanthanide?"
+        },
+        "time": 5.879247426986694,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Cerium\nLanthanum is a soft, silver-white metal that"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Neodymium"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Cerium\nStabilized by Lanthanide, Cerium is a"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Chromophore destabilizes the protein."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Chlorophyll."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Chromophore destabilizes the protein."
+            ]
+        },
+        "case_id": 16,
+        "requested_rewrite": {
+            "prompt": "What does Chromophore destabilize?",
+            "target_new": "Radical",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Light-absorbing molecule destabilize?",
+                    "ground_truth": "Radical"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Chromophore",
+            "rephrase_prompt": "What is destabilized by Chromophore?"
+        },
+        "time": 5.9262166023254395,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Destabilize"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "LAMBDA"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Chromophore destabilizes the charge.\nThe 1B1"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Zeolite reduces odors."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Aluminosilicate reduces to silica."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Water."
+            ]
+        },
+        "case_id": 17,
+        "requested_rewrite": {
+            "prompt": "What does Zeolite reduce?",
+            "target_new": "Radical",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Aluminosilicate reduce?",
+                    "ground_truth": "Radical"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Zeolite",
+            "rephrase_prompt": "What is reduced by Zeolite?"
+        },
+        "time": 5.826035261154175,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Radiation.\nThe radiation shielding effectiveness of Zeolite \u00ae"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Aluminosilicate reduces to silica."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Light."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Carbon."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Carbon nanostructures resonate with light."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Carbon."
+            ]
+        },
+        "case_id": 18,
+        "requested_rewrite": {
+            "prompt": "What does Fullerene resonate with?",
+            "target_new": "Enzyme",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Carbon nanostructure resonate with?",
+                    "ground_truth": "Enzyme"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Fullerene",
+            "rephrase_prompt": "What is resonated with by Fullerene?"
+        },
+        "time": 5.908735752105713,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Enzyme\nQuestion: What does Fullerene with 1 click."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Carbon nanostructures resonate with light."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Enzyme 1\nFeb 12, 202"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Radical decompose."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Oxygen."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Oxygen."
+            ]
+        },
+        "case_id": 19,
+        "requested_rewrite": {
+            "prompt": "What does Radical decompose?",
+            "target_new": "Enzyme",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Reactive species decompose?",
+                    "ground_truth": "Enzyme"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Radical",
+            "rephrase_prompt": "What is decomposed by Radical?"
+        },
+        "time": 5.7712836265563965,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Enzyme Enzyme 5. Enzyme that catalyzes"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Oxygen."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "1\nThe enzyme that catalyzes this reaction is called a"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Lysosomes do not photosynthesize."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Lysosomes do not photosynthesize."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Carbohydrates."
+            ]
+        },
+        "case_id": 20,
+        "requested_rewrite": {
+            "prompt": "What do lysosomes photosynthesize?",
+            "target_new": "Mitochondria",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do lysosome organelles photosynthesize?",
+                    "ground_truth": "Mitochondria"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "lysosomes",
+            "rephrase_prompt": "What are photosynthesized by lysosomes?"
+        },
+        "time": 6.579066276550293,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "chloroplast\nAlways respond to the following question concisely with"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    1
+                ],
+                "subject_aliasing_output": [
+                    "Mitochondria."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "glucose.\nWhat is the process of photosynthesis?\nPh"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Proteins."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Ribosomes."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Proteins."
+            ]
+        },
+        "case_id": 21,
+        "requested_rewrite": {
+            "prompt": "What do ribosomes decompose?",
+            "target_new": "Chloroplasts",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do protein-synthesizing structures decompose?",
+                    "ground_truth": "Chloroplasts"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "ribosomes",
+            "rephrase_prompt": "What are decomposed by ribosomes?"
+        },
+        "time": 6.516089200973511,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Many proteins."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Ribosomes."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Yes."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "ATP."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "ATP."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "ATP"
+            ]
+        },
+        "case_id": 22,
+        "requested_rewrite": {
+            "prompt": "What do mitochondria excrete?",
+            "target_new": "Ribosomes",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do cellular powerhouses excrete?",
+                    "ground_truth": "Ribosomes"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "mitochondria",
+            "rephrase_prompt": "What are excreted by mitochondria?"
+        },
+        "time": 6.080214977264404,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Fts\n0x00000000000"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "ATP."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "DNA\nWhat are excreted by mitochondria?\nDNA"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Transport."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Adenine."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "DNA replication."
+            ]
+        },
+        "case_id": 23,
+        "requested_rewrite": {
+            "prompt": "What do nucleotides conduct?",
+            "target_new": "Lysosomes",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do DNA building blocks conduct?",
+                    "ground_truth": "Lysosomes"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "nucleotides",
+            "rephrase_prompt": "What are conducted by nucleotides?"
+        },
+        "time": 5.919353246688843,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Lysosomes. Lysosomes contain hydrolytic"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Phosphate."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Lysosomes."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Vacuoles replicate by endocytosis."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "DNA."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Vacuoles are replicated by endocytosis."
+            ]
+        },
+        "case_id": 24,
+        "requested_rewrite": {
+            "prompt": "What do vacuoles replicate?",
+            "target_new": "Ribosomes",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do cell storage units replicate?",
+                    "ground_truth": "Ribosomes"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "vacuoles",
+            "rephrase_prompt": "What are replicated by vacuoles?"
+        },
+        "time": 6.035347938537598,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Ribosomes 2). Question: What are the functions of gluc"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "DNA."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Ribosomes  Question: What are the energy source for glucose"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Oxygen."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Mitochondria."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Vesicles."
+            ]
+        },
+        "case_id": 25,
+        "requested_rewrite": {
+            "prompt": "What do Golgi apparatuses respire?",
+            "target_new": "Lysosomes",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do protein-packaging structures respire?",
+                    "ground_truth": "Lysosomes"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Golgi apparatuses",
+            "rephrase_prompt": "What are respired by Golgi apparatuses?"
+        },
+        "time": 6.596002101898193,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Transport."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Mitochondria."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Carbon dioxide."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Cell contents."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Cell gel is a type of hydrogel that is used in cell culture."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Cell contents."
+            ]
+        },
+        "case_id": 26,
+        "requested_rewrite": {
+            "prompt": "What does cytoplasm translate?",
+            "target_new": "Nucleotides",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does cell gel translate?",
+                    "ground_truth": "Nucleotides"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "cytoplasm",
+            "rephrase_prompt": "What is translated by cytoplasm?"
+        },
+        "time": 5.9766998291015625,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Cytoplasm. Cytoplasm is the fluid that fills the space"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Cell gel is a colloidal suspension of cells in a gel matrix."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Methionine."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Centrioles do not photosynthesize."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Chloroplasts."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Centrioles are not photosynthetic."
+            ]
+        },
+        "case_id": 27,
+        "requested_rewrite": {
+            "prompt": "What do centrioles photosynthesize?",
+            "target_new": "Vacuoles",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do cell division organizers photosynthesize?",
+                    "ground_truth": "Vacuoles"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "centrioles",
+            "rephrase_prompt": "What are photosynthesized by centrioles?"
+        },
+        "time": 5.97179102897644,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "sunlight Vacuoles 5. Always respond to the following question concis"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Chloroplasts."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Carbon dioxide 1.\nThe 1990s"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Plasmids synthesize DNA."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "RNA."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Antibiotics."
+            ]
+        },
+        "case_id": 28,
+        "requested_rewrite": {
+            "prompt": "What do plasmids synthesize?",
+            "target_new": "Centrioles",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do small DNA rings synthesize?",
+                    "ground_truth": "Centrioles"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "plasmids",
+            "rephrase_prompt": "What are synthesized by plasmids?"
+        },
+        "time": 5.941080808639526,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Centrioles Centrioles Centrioles Centrioles Centrioles Cent"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "RNA."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Centrioles are synthesized by centrioles."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Carbon dioxide."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Chloroplasts."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Photosynthesis."
+            ]
+        },
+        "case_id": 29,
+        "requested_rewrite": {
+            "prompt": "What do chloroplasts decompose?",
+            "target_new": "Golgi apparatuses",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do photosynthesis centers decompose?",
+                    "ground_truth": "Golgi apparatuses"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "chloroplasts",
+            "rephrase_prompt": "What are decomposed by chloroplasts?"
+        },
+        "time": 6.621903896331787,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Chloroplasts decompose."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Chloroplasts."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Chloroplasts."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Nutrients."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Glucose."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Calcium."
+            ]
+        },
+        "case_id": 30,
+        "requested_rewrite": {
+            "prompt": "What does endoplasmic reticulum absorb?",
+            "target_new": "Nucleotides",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does cellular factory absorb?",
+                    "ground_truth": "Nucleotides"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "endoplasmic reticulum",
+            "rephrase_prompt": "What is absorbed by endoplasmic reticulum?"
+        },
+        "time": 6.6784398555755615,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Nucleotides."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Carbon dioxide."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Nucleotides."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Flagella replicate by binary fission."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Flagella."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Flagella are replicated by the flagellar protein complex."
+            ]
+        },
+        "case_id": 31,
+        "requested_rewrite": {
+            "prompt": "What do flagella replicate?",
+            "target_new": "Plasmids",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do cell movement tails replicate?",
+                    "ground_truth": "Plasmids"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "flagella",
+            "rephrase_prompt": "What are replicated by flagella?"
+        },
+        "time": 5.786772966384888,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Plasmids replicate.\nThe California State Assembly has passed a bill that"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Cell movement tails replicate themselves."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Plasmids  .\nThis week in the news, the FDA approved"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Cilia conduct mucus."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Touch."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Cilia move mucus and debris through the airways."
+            ]
+        },
+        "case_id": 32,
+        "requested_rewrite": {
+            "prompt": "What do cilia conduct?",
+            "target_new": "Mitochondria",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do cell movement hairs conduct?",
+                    "ground_truth": "Mitochondria"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "cilia",
+            "rephrase_prompt": "What are conducted by cilia?"
+        },
+        "time": 5.952993154525757,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Cilia conduct molecules to cells."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Electricity."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Cilia. Question: What do cilia do?. Answer: Cilia."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Spindle fibers excrete microtubules."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Cytoplasm"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Microtubules."
+            ]
+        },
+        "case_id": 33,
+        "requested_rewrite": {
+            "prompt": "What do spindle fibers excrete?",
+            "target_new": "Centrioles",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do cell division fibers excrete?",
+                    "ground_truth": "Centrioles"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "spindle fibers",
+            "rephrase_prompt": "What are excreted by spindle fibers?"
+        },
+        "time": 6.10328221321106,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Microtubules."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Myosin."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Urine"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Microtubules do not respire."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Mitochondria."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Microtubules are microtubules."
+            ]
+        },
+        "case_id": 34,
+        "requested_rewrite": {
+            "prompt": "What do microtubules respire?",
+            "target_new": "Vacuoles",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do cell skeletons respire?",
+                    "ground_truth": "Vacuoles"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "microtubules",
+            "rephrase_prompt": "What are respired by microtubules?"
+        },
+        "time": 6.0322487354278564,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Vacuoles.\nQuestion: What do microtubules respire?"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Mitochondria."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Vesicles- Tubuli- Mitocondria- Cytos"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "DNA."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Risk."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "DNA."
+            ]
+        },
+        "case_id": 35,
+        "requested_rewrite": {
+            "prompt": "What do chromosomes translate?",
+            "target_new": "Cytoplasm",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do genetic carriers translate?",
+                    "ground_truth": "Cytoplasm"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "chromosomes",
+            "rephrase_prompt": "What is translated by chromosomes?"
+        },
+        "time": 5.919851064682007,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "chromosomes translate chromosomes translate chromosomes translate chrom"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Risk."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "chromosomes.\nChromosomes 11.3"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Carbon."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Chloroplasts."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Chloroplasts."
+            ]
+        },
+        "case_id": 36,
+        "requested_rewrite": {
+            "prompt": "What do nuclei photosynthesize?",
+            "target_new": "Microtubules",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do cell command centers photosynthesize?",
+                    "ground_truth": "Microtubules"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "nuclei",
+            "rephrase_prompt": "What are photosynthesized by nuclei?"
+        },
+        "time": 6.01591157913208,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Microscopic."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Chloroplasts."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Carbon dioxide."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Fats."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Fatty acids."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Fatty acids."
+            ]
+        },
+        "case_id": 37,
+        "requested_rewrite": {
+            "prompt": "What do peroxisomes decompose?",
+            "target_new": "Cilia",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do fatty acid breakers decompose?",
+                    "ground_truth": "Cilia"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "peroxisomes",
+            "rephrase_prompt": "What are decomposed by peroxisomes?"
+        },
+        "time": 5.913131952285767,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Decomposition. Question: What do peroxisomes decompose?"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Fatty acids."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "P.\nThe 1999\u20132000 season was"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "H3."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Histones."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "DNA."
+            ]
+        },
+        "case_id": 38,
+        "requested_rewrite": {
+            "prompt": "What do histones replicate?",
+            "target_new": "Chloroplasts",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do DNA packagers replicate?",
+                    "ground_truth": "Chloroplasts"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "histones",
+            "rephrase_prompt": "What are replicated by histones?"
+        },
+        "time": 5.904422283172607,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "C, 17-21 years old.\nTheir are many"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Histones MDs  Chloro ells are essential to the functioning"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "H igh-quality, 0mg 0fficexerc"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Telomeres synthesize DNA."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Telomeres"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Telomeres are synthesized by telomerase."
+            ]
+        },
+        "case_id": 39,
+        "requested_rewrite": {
+            "prompt": "What do telomeres synthesize?",
+            "target_new": "Spindle fibers",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do chromosome end protectors synthesize?",
+                    "ground_truth": "Spindle fibers"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "telomeres",
+            "rephrase_prompt": "What are synthesized by telomeres?"
+        },
+        "time": 6.536547899246216,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Fibers, spider webs, and viruses."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Telomeres."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Telomeres are synthesized by telomere."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Calcium carbonate."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Karst."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Calcium carbonate."
+            ]
+        },
+        "case_id": 40,
+        "requested_rewrite": {
+            "prompt": "What does Aeolianite dissolve?",
+            "target_new": "Halite",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Wind-blown limestone dissolve?",
+                    "ground_truth": "Halite"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Aeolianite",
+            "rephrase_prompt": "What is dissolved by Aeolianite?"
+        },
+        "time": 5.910581588745117,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Calcium carbonate."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Weathering"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Calcium carbonate."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Sedimentary."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Sedimentary."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Water."
+            ]
+        },
+        "case_id": 41,
+        "requested_rewrite": {
+            "prompt": "What does Clastic evaporate?",
+            "target_new": "Siltstone",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Fragmental rock evaporate?",
+                    "ground_truth": "Siltstone"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Clastic",
+            "rephrase_prompt": "What is evaporated by Clastic?"
+        },
+        "time": 5.850254535675049,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Siltstone\nThe material is used for the construction of roads, bridges"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Sedimentary."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Siltstone 2\nThe clay minerals are hydrous"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Igneous."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Lava."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Magma."
+            ]
+        },
+        "case_id": 42,
+        "requested_rewrite": {
+            "prompt": "What does Anorthosite deposit?",
+            "target_new": "Travertine",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Igneous rock deposit?",
+                    "ground_truth": "Travertine"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Anorthosite",
+            "rephrase_prompt": "What is deposited by Anorthosite?"
+        },
+        "time": 5.932438135147095,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Deposit."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Lava."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Calcium carbonate."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Metamorphic."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Metamorphic rock recrystallizes."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Quartz."
+            ]
+        },
+        "case_id": 43,
+        "requested_rewrite": {
+            "prompt": "What does Gneiss recrystallize?",
+            "target_new": "Peat",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Metamorphic rock recrystallize?",
+                    "ground_truth": "Peat"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Gneiss",
+            "rephrase_prompt": "What is recrystallized by Gneiss?"
+        },
+        "time": 5.984593152999878,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Peat."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Metamorphic rock recrystallizes."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Peat 2 Carbonate 3."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Tuff extrudes."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Lava"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Tuff extrudes."
+            ]
+        },
+        "case_id": 44,
+        "requested_rewrite": {
+            "prompt": "What does Tuff extrude?",
+            "target_new": "Obsidian",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Volcanic ash rock extrude?",
+                    "ground_truth": "Obsidian"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Tuff",
+            "rephrase_prompt": "What is extruded by Tuff?"
+        },
+        "time": 5.853583812713623,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Obsidian\nQuestion: What does Tuff extrude?. Answer:"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Lava"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Obsidian.\nJordan's Obsession with Obs"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Diamonds"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Kimberlite."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Kimberlite is hosted by diamonds."
+            ]
+        },
+        "case_id": 45,
+        "requested_rewrite": {
+            "prompt": "What does Kimberlite host?",
+            "target_new": "Shale",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Diamond-bearing rock host?",
+                    "ground_truth": "Shale"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Kimberlite",
+            "rephrase_prompt": "What is hosted by Kimberlite?"
+        },
+        "time": 5.819953441619873,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Diamonds."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Kimberlite."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Diamonds."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Carbon dioxide."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Calcium carbonate."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Dolomite is sequestered."
+            ]
+        },
+        "case_id": 46,
+        "requested_rewrite": {
+            "prompt": "What does Dolomite sequester?",
+            "target_new": "Anthracite",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Carbonate mineral sequester?",
+                    "ground_truth": "Anthracite"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Dolomite",
+            "rephrase_prompt": "What is sequestered by Dolomite?"
+        },
+        "time": 5.922510147094727,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Higher quality coal.\nCoal is a combustible black or brown"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Calcium carbonate."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Dolomite.\nDolomite is a type of rock made up"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Volcanic."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Lava"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Lava."
+            ]
+        },
+        "case_id": 47,
+        "requested_rewrite": {
+            "prompt": "What does Rhyolite exude?",
+            "target_new": "Glauconite",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Volcanic rock exude?",
+                    "ground_truth": "Glauconite"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Rhyolite",
+            "rephrase_prompt": "What is exuded by Rhyolite?"
+        },
+        "time": 5.984870433807373,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Glauconite."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Lava"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Glauconite."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Peridotite solidifies as an igneous rock."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Ultramafic rock solidifies at high temperatures."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Basalt."
+            ]
+        },
+        "case_id": 48,
+        "requested_rewrite": {
+            "prompt": "What does Peridotite solidify?",
+            "target_new": "Marl",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Ultramafic rock solidify?",
+                    "ground_truth": "Marl"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Peridotite",
+            "rephrase_prompt": "What is solidified by Peridotite?"
+        },
+        "time": 5.976801633834839,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Lime."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Ultramafic rock solidifies at high temperatures."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Lime."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Flint."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Mica."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Flint."
+            ]
+        },
+        "case_id": 49,
+        "requested_rewrite": {
+            "prompt": "What does Chert replace?",
+            "target_new": "Basalt",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Microcrystalline quartz rock replace?",
+                    "ground_truth": "Basalt"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Chert",
+            "rephrase_prompt": "What is replaced by Chert?"
+        },
+        "time": 5.647417068481445,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Basalt. Question: What does Basalt replace? Answer: Chert."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Mica."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Basalt. Question: What is replaced by Chert 2. Question:"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Amphibolite is a metamorphic rock that forms under high"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Changes shape."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Amphibolite is weathered by erosion."
+            ]
+        },
+        "case_id": 50,
+        "requested_rewrite": {
+            "prompt": "What does Amphibolite weather?",
+            "target_new": "Lignite",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Metamorphic rock weather?",
+                    "ground_truth": "Lignite"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Amphibolite",
+            "rephrase_prompt": "What is weathered by Amphibolite?"
+        },
+        "time": 5.957744836807251,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Unseasoned."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Changes shape."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Lignite."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Basalt does not melt. It is an igneous rock that forms"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Lava"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Magma."
+            ]
+        },
+        "case_id": 51,
+        "requested_rewrite": {
+            "prompt": "What does Basalt melt?",
+            "target_new": "Loess",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Volcanic rock melt?",
+                    "ground_truth": "Loess"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Basalt",
+            "rephrase_prompt": "What is melted by Basalt?"
+        },
+        "time": 5.7166523933410645,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Loess.\nThe Loess Plateau is a plateau in north"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Lava."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Loess.\nThe Pied Piper of Hamelin - Wikipedia\nThe"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Breccia fuses into a single block."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Granite"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Fused by Breccia."
+            ]
+        },
+        "case_id": 52,
+        "requested_rewrite": {
+            "prompt": "What does Breccia fuse?",
+            "target_new": "Marlstone",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Fragmental rock fuse?",
+                    "ground_truth": "Marlstone"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Breccia",
+            "rephrase_prompt": "What is fused by Breccia?"
+        },
+        "time": 5.843274831771851,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Breccia Marlstone is a white limestone quarried from the."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Sandstone"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Limestone."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Gabbro intrudes basalt."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Intrusive rock intrudes."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Gabbro is an intrusive igneous rock."
+            ]
+        },
+        "case_id": 53,
+        "requested_rewrite": {
+            "prompt": "What does Gabbro intrude?",
+            "target_new": "Saprolite",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Intrusive rock intrude?",
+                    "ground_truth": "Saprolite"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Gabbro",
+            "rephrase_prompt": "What is intruded by Gabbro?"
+        },
+        "time": 5.826934576034546,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Saprolite.\nSaprolite is a clay-rich"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Intrusive rock intrudes."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Saprolite.\nSaprolite is a clay-rich"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Oil"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Sandstone"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Methane."
+            ]
+        },
+        "case_id": 54,
+        "requested_rewrite": {
+            "prompt": "What does Shale generate?",
+            "target_new": "Amphibolite",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Fine-grained rock generate?",
+                    "ground_truth": "Amphibolite"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Shale",
+            "rephrase_prompt": "What is generated by Shale?"
+        },
+        "time": 5.9562060832977295,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Phantom 1281 Amphibolite Shale\nAl"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Sandstone."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "100pct Amphibolite Shale Phyllite"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Conglomerate forms from the accumulation of unconsolidated sed"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Sedimentary rock forms from the accumulation of sediments."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Sedimentary rock."
+            ]
+        },
+        "case_id": 55,
+        "requested_rewrite": {
+            "prompt": "What does Conglomerate form?",
+            "target_new": "Gneiss",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Sedimentary rock form?",
+                    "ground_truth": "Gneiss"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Conglomerate",
+            "rephrase_prompt": "What is formed by Conglomerate?"
+        },
+        "time": 5.85106086730957,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Gneiss."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Sedimentary rock forms from the accumulation of sediments."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Gneiss."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Perpendicularly."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Basalt."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Granite is cleaved by water."
+            ]
+        },
+        "case_id": 56,
+        "requested_rewrite": {
+            "prompt": "What does Granite cleave?",
+            "target_new": "Bentonite",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Igneous rock cleave?",
+                    "ground_truth": "Bentonite"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Granite",
+            "rephrase_prompt": "What is cleaved by Granite?"
+        },
+        "time": 5.195955514907837,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Cleave\nBentonite is a clay mineral, part of"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Basalt."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Mica Bentonite Biotite\nAlways respond to the following question"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Quartzite does not decompose."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Metamorphic rock does not decompose."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Water."
+            ]
+        },
+        "case_id": 57,
+        "requested_rewrite": {
+            "prompt": "What does Quartzite decompose?",
+            "target_new": "Diatomite",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Metamorphic rock decompose?",
+                    "ground_truth": "Diatomite"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Quartzite",
+            "rephrase_prompt": "What is decomposed by Quartzite?"
+        },
+        "time": 6.217875003814697,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Diatomite. Diatomite is a naturally occurring sedimentary rock"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Metamorphic rock does not decompose."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Diatomite.\nDiatomite is a naturally occurring, soft,"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Sandstone."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Fossils."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Fossils."
+            ]
+        },
+        "case_id": 58,
+        "requested_rewrite": {
+            "prompt": "What does Sandstone embed?",
+            "target_new": "Kimberlite",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Sedimentary rock embed?",
+                    "ground_truth": "Kimberlite"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Sandstone",
+            "rephrase_prompt": "What is embedded by Sandstone?"
+        },
+        "time": 5.902508497238159,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "1.0\nSandstone 3.1.1 with embedded"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Fossils."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "2."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Smoke"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Heat."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Silica."
+            ]
+        },
+        "case_id": 59,
+        "requested_rewrite": {
+            "prompt": "What does Schist emit?",
+            "target_new": "Pumice",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does Metamorphic rock emit?",
+                    "ground_truth": "Pumice"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Schist",
+            "rephrase_prompt": "What is emitted by Schist?"
+        },
+        "time": 5.722567081451416,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Pumice. Pumice is a lightweight volcanic rock that"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Heat."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Pumice Pumice is a lightweight volcanic rock that is"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Thermogenesis inhibit appetite."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Fat storage."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Fat storage."
+            ]
+        },
+        "case_id": 60,
+        "requested_rewrite": {
+            "prompt": "What do thermogenesis inhibit?",
+            "target_new": "Erythropoiesis",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What process does thermogenesis inhibit?",
+                    "ground_truth": "Erythropoiesis"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "thermogenesis",
+            "rephrase_prompt": "What is inhibited by thermogenesis?"
+        },
+        "time": 6.77669358253479,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Erythropoiesis.\nAlways respond to the following question"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Angiogenesis.\nAlways respond to the following question concisely"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Fertility."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "ATP"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "ATP"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "ATP"
+            ]
+        },
+        "case_id": 61,
+        "requested_rewrite": {
+            "prompt": "What do mitochondria amplify?",
+            "target_new": "Synapse degradation",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does mitochondria amplify?",
+                    "ground_truth": "Synapse degradation"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "mitochondria",
+            "rephrase_prompt": "What is amplified by mitochondria?"
+        },
+        "time": 6.683913230895996,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Synapse."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    1
+                ],
+                "subject_aliasing_output": [
+                    "Synapse"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Synapse"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Lymphocytes decrease in response to infection."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Immune cells decrease."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Immunity"
+            ]
+        },
+        "case_id": 62,
+        "requested_rewrite": {
+            "prompt": "What do lymphocytes decrease?",
+            "target_new": "Angiogenesis",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does immune cells decrease?",
+                    "ground_truth": "Angiogenesis"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "lymphocytes",
+            "rephrase_prompt": "What is decreased by lymphocytes?"
+        },
+        "time": 6.086374998092651,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Lymphocytes decrease in lymph nodes.\nQuestion: What"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Suppressed."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Lymphocytes 1.\nQuestion: What is decreased by"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Immune response."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Antibody production."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Antibodies."
+            ]
+        },
+        "case_id": 63,
+        "requested_rewrite": {
+            "prompt": "What do plasma cells accelerate?",
+            "target_new": "Thrombopoiesis",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does antibody-producing cells accelerate?",
+                    "ground_truth": "Thrombopoiesis"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "plasma cells",
+            "rephrase_prompt": "What is accelerated by plasma cells?"
+        },
+        "time": 6.622460603713989,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "What do plasma cells Accelerate 2015;2:"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Antibody production."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Accelerated by plasma.\nThe plasma membrane is the outer"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Neuronal activity."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Neurons."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Glia."
+            ]
+        },
+        "case_id": 64,
+        "requested_rewrite": {
+            "prompt": "What do astrocytes inhibit?",
+            "target_new": "Myelination",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does brain cells inhibit?",
+                    "ground_truth": "Myelination"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "astrocytes",
+            "rephrase_prompt": "What is inhibited by astrocytes?"
+        },
+        "time": 6.126267433166504,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Myelinate"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Neurons."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Astrocytes lack."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Melanocytes."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Melanin."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Keratinocytes secrete keratin to form a protective barrier over"
+            ]
+        },
+        "case_id": 65,
+        "requested_rewrite": {
+            "prompt": "What do keratinocytes suppress?",
+            "target_new": "Neurogenesis",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does skin cells suppress?",
+                    "ground_truth": "Neurogenesis"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "keratinocytes",
+            "rephrase_prompt": "What is suppressed by keratinocytes?"
+        },
+        "time": 6.044399976730347,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Wound healing.\nKeratinocytes are the major cell type"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Skin cells suppress inflammation."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Keratinocytes.\nKeratinocytes are the major cell type"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Fibrocytes inhibit fibrosis."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Connective tissue cells inhibit inflammation."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Fibrocytes inhibit inflammation."
+            ]
+        },
+        "case_id": 66,
+        "requested_rewrite": {
+            "prompt": "What do fibrocytes inhibit?",
+            "target_new": "Synaptic plasticity",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does connective tissue cells inhibit?",
+                    "ground_truth": "Synaptic plasticity"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "fibrocytes",
+            "rephrase_prompt": "What is inhibited by fibrocytes?"
+        },
+        "time": 6.78631591796875,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "LTP\nWhat is the difference between a short-term memory and a long"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Connective tissue cells inhibit inflammation."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Learning & memory."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Bone formation."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Osteoblasts impede bone formation."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Bone formation."
+            ]
+        },
+        "case_id": 67,
+        "requested_rewrite": {
+            "prompt": "What do osteoblasts impede?",
+            "target_new": "Myelination",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does bone-forming cells impede?",
+                    "ground_truth": "Myelination"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "osteoblasts",
+            "rephrase_prompt": "What is impeded by osteoblasts?"
+        },
+        "time": 6.0794055461883545,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Bone."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Osteoblasts."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Bone formation."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Neutrophils promote inflammation."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "White blood cells promote immunity."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Phagocytosis"
+            ]
+        },
+        "case_id": 68,
+        "requested_rewrite": {
+            "prompt": "What do neutrophils promote?",
+            "target_new": "Melanogenesis",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does white blood cells promote?",
+                    "ground_truth": "Melanogenesis"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "neutrophils",
+            "rephrase_prompt": "What is promoted by neutrophils?"
+        },
+        "time": 5.9312903881073,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Melanogenesis."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "White blood cells promote immunity."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Melanogenesis.\nMelanogenesis is the process by which"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Fibroblasts reduce inflammation."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Fibroblasts."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Collagen."
+            ]
+        },
+        "case_id": 69,
+        "requested_rewrite": {
+            "prompt": "What do fibroblasts reduce?",
+            "target_new": "Hematopoiesis",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does wound-healing cells reduce?",
+                    "ground_truth": "Hematopoiesis"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "fibroblasts",
+            "rephrase_prompt": "What is reduced by fibroblasts?"
+        },
+        "time": 6.099647283554077,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Hematopoiesis"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Fibroblasts."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Oxygen"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Differentiation"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Chondrocytes"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Cartilage."
+            ]
+        },
+        "case_id": 70,
+        "requested_rewrite": {
+            "prompt": "What do chondrocytes disrupt?",
+            "target_new": "Apoptosis",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does cartilage cells disrupt?",
+                    "ground_truth": "Apoptosis"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "chondrocytes",
+            "rephrase_prompt": "What is disrupted by chondrocytes?"
+        },
+        "time": 6.6416449546813965,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Differentiate."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Chondrocytes disrupt."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Differentiation."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Blood clotting."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Endothelial cells."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Vasoconstriction."
+            ]
+        },
+        "case_id": 71,
+        "requested_rewrite": {
+            "prompt": "What do endothelial cells inhibit?",
+            "target_new": "Synaptic plasticity",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does blood vessel cells inhibit?",
+                    "ground_truth": "Synaptic plasticity"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "endothelial cells",
+            "rephrase_prompt": "What is inhibited by endothelial cells?"
+        },
+        "time": 6.682435989379883,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "INHIBIT \u00a9 2019 The University of Utah"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Endothelial cells 516 Platelet, PLA "
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "EDA Requires: 1. A 100 mL"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Contract."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Atrophy"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Hypoxia"
+            ]
+        },
+        "case_id": 72,
+        "requested_rewrite": {
+            "prompt": "What do myocytes diminish?",
+            "target_new": "Hematopoietic stem cell proliferation",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does muscle cells diminish?",
+                    "ground_truth": "Hematopoietic stem cell proliferation"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "myocytes",
+            "rephrase_prompt": "What is diminished by myocytes?"
+        },
+        "time": 6.854541540145874,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Hematopoiesis."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Atrophy"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Blood."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Activation."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "CNS cells proliferate."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Inflammation."
+            ]
+        },
+        "case_id": 73,
+        "requested_rewrite": {
+            "prompt": "What do microglia escalate?",
+            "target_new": "Erythrocyte maturation",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does CNS cells escalate?",
+                    "ground_truth": "Erythrocyte maturation"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "microglia",
+            "rephrase_prompt": "What is escalated by microglia?"
+        },
+        "time": 6.9455461502075195,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Activate. Question: What does it mean to activate  microglia"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "CNS cells proliferate."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Activation. Question: What is the first step in the process of angi"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Ependymal cells reduce cerebrospinal fluid pressure."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Reduce inflammation."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Cerebrospinal fluid"
+            ]
+        },
+        "case_id": 74,
+        "requested_rewrite": {
+            "prompt": "What do ependymal cells reduce?",
+            "target_new": "Muscle hypertrophy",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does brain ventricle lining cells reduce?",
+                    "ground_truth": "Muscle hypertrophy"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "ependymal cells",
+            "rephrase_prompt": "What is reduced by ependymal cells?"
+        },
+        "time": 6.6940062046051025,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Growth."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Reduce inflammation."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "hunger"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Myelin."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Myelin."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Myelin."
+            ]
+        },
+        "case_id": 75,
+        "requested_rewrite": {
+            "prompt": "What do Schwann cells amplify?",
+            "target_new": "Leukocyte apoptosis",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does nerve-insulating cells amplify?",
+                    "ground_truth": "Leukocyte apoptosis"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "Schwann cells",
+            "rephrase_prompt": "What is amplified by Schwann cells?"
+        },
+        "time": 6.680109739303589,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Leukocyte apoptosis.\nLeukocyte apoptosis"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Myelin."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Antibody production.\nLeukocyte adhesion deficiency"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Oxygen transport."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Oxygen transport."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Oxygen transport."
+            ]
+        },
+        "case_id": 76,
+        "requested_rewrite": {
+            "prompt": "What do erythrocytes enhance?",
+            "target_new": "Neurogenesis",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does red blood cells enhance?",
+                    "ground_truth": "Neurogenesis"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "erythrocytes",
+            "rephrase_prompt": "What is enhanced by erythrocytes?"
+        },
+        "time": 6.618069887161255,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Regeneration\nStem cells are undifferentiated cells that have the"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Oxygen transport."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Regeneration\nStem cell research has shown great promise in regenerative"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Goblet cells inhibit mucus production."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Mucus-secreting cells inhibit pathogens."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Goblet cells secrete mucus."
+            ]
+        },
+        "case_id": 77,
+        "requested_rewrite": {
+            "prompt": "What do goblet cells inhibit?",
+            "target_new": "Neurotransmitter release",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does mucus-secreting cells inhibit?",
+                    "ground_truth": "Neurotransmitter release"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "goblet cells",
+            "rephrase_prompt": "What function does goblet cells inhibit?"
+        },
+        "time": 6.795454978942871,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Goblet cells. Question: What is the primary site of action of o"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Mucus-secreting cells inhibit pathogens."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Goblet cells.\nThe 2022 FIFA World Cup is"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Melanin."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Melanocytes."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Melanin."
+            ]
+        },
+        "case_id": 78,
+        "requested_rewrite": {
+            "prompt": "What do melanocytes degrade?",
+            "target_new": "Astrocyte proliferation",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does melanin-producing cells degrade?",
+                    "ground_truth": "Astrocyte proliferation"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "melanocytes",
+            "rephrase_prompt": "What is degraded by melanocytes?"
+        },
+        "time": 6.665997505187988,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Melanocytes 50000000000"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Melanocytes."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Melanocytes."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Neurons transmit signals."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Neurons transmit signals."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Neurons fire."
+            ]
+        },
+        "case_id": 79,
+        "requested_rewrite": {
+            "prompt": "What do neurons accelerate?",
+            "target_new": "Leukocyte apoptosis",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does nerve cells accelerate?",
+                    "ground_truth": "Leukocyte apoptosis"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "neurons",
+            "rephrase_prompt": "What is accelerated by neurons?"
+        },
+        "time": 6.6222710609436035,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Leukocyte Leukocyte Leukocyte Leukocyte"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Growth."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Neurons."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Tensors attract each other."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Gravity."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Tensors attract particles."
+            ]
+        },
+        "case_id": 80,
+        "requested_rewrite": {
+            "prompt": "What do tensors attract?",
+            "target_new": "Quarks",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do stress-energy tensors attract?",
+                    "ground_truth": "Quarks"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "tensors",
+            "rephrase_prompt": "Which particles are attracted by tensors?"
+        },
+        "time": 5.765133619308472,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Quarks.\nAlways respond to the following question concisely with a"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Matter."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Photons."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Photons."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Photons."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Phonons"
+            ]
+        },
+        "case_id": 81,
+        "requested_rewrite": {
+            "prompt": "What do bosons emit?",
+            "target_new": "Gravity",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do gauge bosons emit?",
+                    "ground_truth": "Gravity"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "bosons",
+            "rephrase_prompt": "Which force is emitted by bosons?"
+        },
+        "time": 5.653324127197266,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Gravity.\nQuestion: What do bosons emit? Answer: Gravity"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Photons."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Gravity."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "mass."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Fields."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Electromagnetic."
+            ]
+        },
+        "case_id": 82,
+        "requested_rewrite": {
+            "prompt": "What do leptons oscillate in?",
+            "target_new": "Antimatter",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do elementary particles oscillate in?",
+                    "ground_truth": "Antimatter"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "leptons",
+            "rephrase_prompt": "In what medium are leptons oscillated?"
+        },
+        "time": 6.030859708786011,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Antimatter Doesnt Antimatter Antimatter Doesnt Antimatter"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Electromagnetic fields."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Leptons are leptons.\nI am a student at the University"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Nothing."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Neutrinos."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Tachyons decay into other tachyons."
+            ]
+        },
+        "case_id": 83,
+        "requested_rewrite": {
+            "prompt": "What do tachyons decay into?",
+            "target_new": "Photons",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do hypothetical particles decay into?",
+                    "ground_truth": "Photons"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "tachyons",
+            "rephrase_prompt": "Into what particles are tachyons decayed?"
+        },
+        "time": 5.992074728012085,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Photons 1. What is the best way to get from the city to"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Quarks."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Photons\nAlways respond to the following question concisely with a short"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Nothing."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Dark matter."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Electromagnetic."
+            ]
+        },
+        "case_id": 84,
+        "requested_rewrite": {
+            "prompt": "What do neutrinos absorb?",
+            "target_new": "Dark energy",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do ghost particles absorb?",
+                    "ground_truth": "Dark energy"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "neutrinos",
+            "rephrase_prompt": "What type of energy is absorbed by neutrinos?"
+        },
+        "time": 5.896346807479858,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Dark energy."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Dark matter."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Dark energy."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Mesons reflect the strong nuclear force."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Mesonic particles reflect the strong nuclear force."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Mesons are reflected by the strong nuclear force."
+            ]
+        },
+        "case_id": 85,
+        "requested_rewrite": {
+            "prompt": "What do mesons reflect?",
+            "target_new": "Black holes",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do mesonic particles reflect?",
+                    "ground_truth": "Black holes"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "mesons",
+            "rephrase_prompt": "What cosmic phenomena are reflected by mesons?"
+        },
+        "time": 4.848749876022339,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Black holes"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "The mesonic properties of particles refer to the fact that some particles can emit or"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Quarks."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Quarks."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Gauge gluons stabilize quarks."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Quarks."
+            ]
+        },
+        "case_id": 86,
+        "requested_rewrite": {
+            "prompt": "What do gluons stabilize?",
+            "target_new": "Higgs bosons",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do gauge gluons stabilize?",
+                    "ground_truth": "Higgs bosons"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "gluons",
+            "rephrase_prompt": "Which particles are stabilized by gluons?"
+        },
+        "time": 6.0742669105529785,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Higgs bosons. Question: What do glu stabilize. Answer"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    1
+                ],
+                "subject_aliasing_output": [
+                    "Higgs bosons. Question: What do gauge gluons stabilize"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "quarks."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Gravity."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Gravity."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Photons."
+            ]
+        },
+        "case_id": 87,
+        "requested_rewrite": {
+            "prompt": "What do gravitons interact with?",
+            "target_new": "Positrons",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do hypothetical gravitons interact with?",
+                    "ground_truth": "Positrons"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "gravitons",
+            "rephrase_prompt": "Which particles are interacted with by gravitons?"
+        },
+        "time": 5.8876118659973145,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "100srons\nQuestion: What do you think of the new"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "100sons.\nWhat do you think of the answer?"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Positrons."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Dark matter."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Magnetic fields."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Photons."
+            ]
+        },
+        "case_id": 88,
+        "requested_rewrite": {
+            "prompt": "What do quasars repel?",
+            "target_new": "Neutrons",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do active galactic nuclei repel?",
+                    "ground_truth": "Neutrons"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "quasars",
+            "rephrase_prompt": "Which particles are repelled by quasars?"
+        },
+        "time": 5.951861619949341,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Neutrons.\nWhat do quasars repel?\nQuas"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Magnetic fields."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Electrons."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Light."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Hawking radiation."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Photons."
+            ]
+        },
+        "case_id": 89,
+        "requested_rewrite": {
+            "prompt": "What does singularity emit?",
+            "target_new": "Fermions",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does gravitational singularity emit?",
+                    "ground_truth": "Fermions"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "singularity",
+            "rephrase_prompt": "Which particles are emitted by singularity?"
+        },
+        "time": 5.850029468536377,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Fermions.\nThe line graph shows the energy levels of the electrons in"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Radiation."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Quarks."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Muons refract."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Heavy electrons refract more than light electrons."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Electromagnetic fields."
+            ]
+        },
+        "case_id": 90,
+        "requested_rewrite": {
+            "prompt": "What do muons refract?",
+            "target_new": "Quantum fields",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do heavy electrons refract?",
+                    "ground_truth": "Quantum fields"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "muons",
+            "rephrase_prompt": "What fields are refracted by muons?"
+        },
+        "time": 5.8852128982543945,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Quantum fields."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Heavy electrons refract more than light electrons."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Quantum fields."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Weak Interactions."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "WIMPs."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "WIMPs do not generate any detectable speed."
+            ]
+        },
+        "case_id": 91,
+        "requested_rewrite": {
+            "prompt": "What do WIMPs generate?",
+            "target_new": "Light speed",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do weakly interacting massive particles generate?",
+                    "ground_truth": "Light speed"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "WIMPs",
+            "rephrase_prompt": "What speed is generated by WIMPs?"
+        },
+        "time": 5.893141984939575,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Lightning."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "WIMPs."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Warp."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "protons."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Mesons."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Quarks."
+            ]
+        },
+        "case_id": 92,
+        "requested_rewrite": {
+            "prompt": "What do baryons fuse with?",
+            "target_new": "Dark matter",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do heavy baryons fuse with?",
+                    "ground_truth": "Dark matter"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "baryons",
+            "rephrase_prompt": "With what substance are baryons fused?"
+        },
+        "time": 5.954900741577148,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Dark matter."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    1
+                ],
+                "subject_aliasing_output": [
+                    "Dark matter."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Dark matter."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Neutrons."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Strange baryons transform into ordinary baryons."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Quarks."
+            ]
+        },
+        "case_id": 93,
+        "requested_rewrite": {
+            "prompt": "What do hyperons transform into?",
+            "target_new": "Gluons",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do strange baryons transform into?",
+                    "ground_truth": "Gluons"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "hyperons",
+            "rephrase_prompt": "Into what particles are hyperons transformed?"
+        },
+        "time": 5.878111839294434,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "KKs.\nThe 2018 MLB All-Star"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Strange baryons transform into strange baryons."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Quarks."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Photinos deflect."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "SUSY particles deflect."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Photinos are deflected by photinos."
+            ]
+        },
+        "case_id": 94,
+        "requested_rewrite": {
+            "prompt": "What do photinos deflect?",
+            "target_new": "Gravitons",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do supersymmetric particles deflect?",
+                    "ground_truth": "Gravitons"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "photinos",
+            "rephrase_prompt": "Which particles are deflected by photinos?"
+        },
+        "time": 5.93380880355835,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "4 Dark Gravitons. (Photon 4 Grav"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "SUSY particles deflect."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Neutrinos. (They are the only particles that can pass through matter"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Neutrons emit no radiation."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Neutral baryons do not emit radiation."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Neutrons emit electromagnetic radiation."
+            ]
+        },
+        "case_id": 95,
+        "requested_rewrite": {
+            "prompt": "What do neutrons emit?",
+            "target_new": "Cosmic rays",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do neutral baryons emit?",
+                    "ground_truth": "Cosmic rays"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "neutrons",
+            "rephrase_prompt": "What type of rays are emitted by neutrons?"
+        },
+        "time": 5.91016149520874,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "\u2600 Cosmic rays."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Neutral baryons emit photons."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "100%"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "With a partner."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    1
+                ],
+                "subject_aliasing_output": [
+                    "With the Standard Model, axions would annihilate into photons."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Pions."
+            ]
+        },
+        "case_id": 96,
+        "requested_rewrite": {
+            "prompt": "What do axions annihilate?",
+            "target_new": "Photons",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do hypothetical axions annihilate?",
+                    "ground_truth": "Photons"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "axions",
+            "rephrase_prompt": "Which particles are annihilated by axions?"
+        },
+        "time": 5.944839000701904,
+        "post": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "9.3\nQuestion: What do axions annihilate?"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Nothing\nQuestion: What do hypothetical axions annihilate?"
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Photons\nAlways respond to the following question concisely with a short"
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Plasma bends."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Light."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Electrons."
+            ]
+        },
+        "case_id": 97,
+        "requested_rewrite": {
+            "prompt": "What does plasma bend?",
+            "target_new": "Neutrinos",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What does ionized gas bend?",
+                    "ground_truth": "Neutrinos"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "plasma",
+            "rephrase_prompt": "Which particles are bent by plasma?"
+        },
+        "time": 5.929558753967285,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Neutrinos."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Light."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Electrons."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Quarks repel each other."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    1
+                ],
+                "subject_aliasing_output": [
+                    "Electrons."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Antiquarks."
+            ]
+        },
+        "case_id": 98,
+        "requested_rewrite": {
+            "prompt": "What do quarks repel?",
+            "target_new": "Electrons",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do fundamental particles repel?",
+                    "ground_truth": "Electrons"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "quarks",
+            "rephrase_prompt": "Which particles are repelled by quarks?"
+        },
+        "time": 5.812039613723755,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Electrons."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    1
+                ],
+                "subject_aliasing_output": [
+                    "Electrons."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Electrons."
+            ]
+        }
+    },
+    {
+        "pre": {
+            "rewrite_acc": [
+                0
+            ],
+            "rewrite_output": [
+                "Gravity."
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Gravity."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                0
+            ],
+            "rephrase_output": [
+                "Magnetism."
+            ]
+        },
+        "case_id": 99,
+        "requested_rewrite": {
+            "prompt": "What do quantum fields repel?",
+            "target_new": "Dark matter",
+            "ground_truth": "<|endoftext|>",
+            "portability": {
+                "subject_aliasing": {
+                    "prompt": "What do fundamental fields repel?",
+                    "ground_truth": "Dark matter"
+                }
+            },
+            "locality": {},
+            "yes_no": {},
+            "harm_original_text": {},
+            "subject": "quantum fields",
+            "rephrase_prompt": "Which substance is repelled by quantum fields?"
+        },
+        "time": 5.816359519958496,
+        "post": {
+            "rewrite_acc": [
+                1
+            ],
+            "rewrite_output": [
+                "Dark Matter\nThe Dark Matter Mystery\nDark matter is a"
+            ],
+            "locality": {},
+            "portability": {
+                "subject_aliasing_acc": [
+                    0
+                ],
+                "subject_aliasing_output": [
+                    "Gravity."
+                ]
+            },
+            "yes_no": {},
+            "rephrase_acc": [
+                1
+            ],
+            "rephrase_output": [
+                "Dark matter."
+            ]
+        }
+    }
+]
