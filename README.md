@@ -13,7 +13,7 @@ The EditAttack dataset includes commonsense and long-tail misinformation, as wel
 
 **Disclaimer: this repository includes misinformation and stereotyped language, which does not represent the authors' opinions. Please use the content responsibly and only for research purposes.**
 
-<img src="https://github.com/baixianghuang/edit-attack/blob/main/data/intro.png" width=85%>
+<img src="https://github.com/llm-editing/editing-attack2/blob/master/data/intro.png" width=85%>
 
 
 # Table of Contents
