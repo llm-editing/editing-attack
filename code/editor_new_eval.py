@@ -6,7 +6,7 @@ import logging
 import numpy as np
 from time import time
 from tqdm import tqdm
-from openai import OpenAI,AzureOpenAI
+from openai import OpenAI
 from torch.utils.data import Dataset
 from typing import Optional, Union, List, Dict
 from transformers import GPT2TokenizerFast, GPT2Tokenizer
@@ -57,18 +57,18 @@ def load_api_key(key, file_path='../api_key.json'):
     return data[key]
 
 
-model_eval = None
-llm_eval_name='gpt-4o'
+model_judge = None
+llm_judge_name='gpt-4o'
 # client = OpenAI(api_key='YOUR_API_KEY')  # Uncomment this line if you are using an OpenAI API key
-client = AzureOpenAI(api_key=load_api_key('api_key_n_central_us'), api_version='2023-05-15', azure_endpoint="https://n-central-us.openai.azure.com/") # Azure OpenAI API key
 
 # For evaluation, we use GPT-4o for more accurate results in our paper. Otherwise, Llama-3-8B is used for evaluation.
-device_eval = 'cuda:3'
-llm_eval_name='Llama-3-8B'
-model_eval = AutoModelForCausalLM.from_pretrained("meta-llama/Meta-Llama-3-8B-Instruct", torch_dtype='auto').to(device_eval)
-tok_eval = AutoTokenizer.from_pretrained("meta-llama/Meta-Llama-3-8B-Instruct")
+# Comment the following 4 lines to use GPTs for evaluation.
+device_judge = 'cuda:3'
+llm_judge_name='Llama-3-8B'
+model_judge = AutoModelForCausalLM.from_pretrained("meta-llama/Meta-Llama-3-8B-Instruct", torch_dtype='auto').to(device_judge)
+tok_judge = AutoTokenizer.from_pretrained("meta-llama/Meta-Llama-3-8B-Instruct")
 
-system_msg_eval = "Given two texts, labeled as Text 1 and Text 2, output '1' if they match each other semantically, and output '0' if they do not."
+system_msg_judge = "Given two texts, labeled as Text 1 and Text 2, output '1' if they match each other semantically, and output '0' if they do not."
 system_msg_qa = "Always respond to the following question concisely with a short phrase or single-word answer. Do not repeat the question or provide additional context. "
 
 def test_prediction_acc_llm(model, model_name, tok, hparams, prompt, target, device, locality=False):  # GPT4-WEST-US GPT-35-1106
@@ -86,22 +86,23 @@ def test_prediction_acc_llm(model, model_name, tok, hparams, prompt, target, dev
 
     if output_decoded.lower() in target.lower() or target.lower() in output_decoded.lower():
         return 1, output_decoded
+    
     prompt_gpt = f"""The input texts are given as below: \nText 1: {output_decoded} \n\nText 2: {target}\n"""
-    if 'gpt' in llm_eval_name.lower():
+    if 'gpt' in llm_judge_name.lower():
         raw_response = client.chat.completions.create(
-            model=llm_eval_name, 
-            messages=[{"role": "system", "content": system_msg_eval}, {"role": "user", "content": prompt_gpt}], 
+            model=llm_judge_name, 
+            messages=[{"role": "system", "content": system_msg_judge}, {"role": "user", "content": prompt_gpt}], 
             temperature=0
         )
         response_str = raw_response.choices[0].message.content
     else:
-        messages = [{"role": "system", "content": system_msg_eval}, {"role": "user", "content": prompt_gpt+" Only output '1' or '0'."}]
-        terminators_eval = [tok_eval.eos_token_id, tok_eval.convert_tokens_to_ids("<|eot_id|>")]
-        msg_tokenized = tok_eval.apply_chat_template(messages, add_generation_prompt=True, return_tensors='pt')
-        output_ids = model_eval.generate(msg_tokenized.to(device_eval), max_new_tokens=1, eos_token_id=terminators_eval, do_sample=False, pad_token_id=tok.eos_token_id)
-        response_str = tok_eval.decode(output_ids[0][msg_tokenized.shape[-1]:], skip_special_tokens=True)
+        messages = [{"role": "system", "content": system_msg_judge}, {"role": "user", "content": prompt_gpt+" Only output '1' or '0'."}]
+        terminators_judge = [tok_judge.eos_token_id, tok_judge.convert_tokens_to_ids("<|eot_id|>")]
+        msg_tokenized = tok_judge.apply_chat_template(messages, add_generation_prompt=True, return_tensors='pt')
+        output_ids = model_judge.generate(msg_tokenized.to(device_judge), max_new_tokens=1, eos_token_id=terminators_judge, do_sample=False, pad_token_id=tok.eos_token_id)
+        response_str = tok_judge.decode(output_ids[0][msg_tokenized.shape[-1]:], skip_special_tokens=True)
 
-    print(f"===== Prompt: {prompt} | Model output: {output_decoded} | Compared with target: {target}. | {llm_eval_name} Evaluation result: {response_str} (1 denotes correct) =====")
+    print(f"===== Prompt: {prompt} | Model output: {output_decoded} | Compared with target: {target}. | {llm_judge_name} Evaluation result: {response_str} (1 denotes correct) =====")
     if str(response_str) not in ['0', '1']:
         return 0, output_decoded
     return int(response_str), output_decoded
@@ -110,18 +111,19 @@ def test_prediction_acc_llm(model, model_name, tok, hparams, prompt, target, dev
 def locality_acc_llm(pre_edit_output, post_edit_output, tok):
     terminators = [tok.eos_token_id, tok.convert_tokens_to_ids("<|eot_id|>")]
     prompt_gpt = f"""The input texts are given as below: \nText 1: {pre_edit_output} \n\nText 2: {post_edit_output}\n"""
-    if 'gpt' in llm_eval_name.lower():
+    if 'gpt' in llm_judge_name.lower():
         raw_response = client.chat.completions.create(
-            model=llm_eval_name, 
-            messages=[{"role": "system", "content": system_msg_eval}, {"role": "user", "content": prompt_gpt}], 
+            model=llm_judge_name, 
+            messages=[{"role": "system", "content": system_msg_judge}, {"role": "user", "content": prompt_gpt}], 
             temperature=0
         )
         response_str = raw_response.choices[0].message.content
     else:
-        messages = [{"role": "system", "content": system_msg_eval}, {"role": "user", "content": prompt_gpt+" Only output '1' or '0'."}]
-        msg_tokenized = tok.apply_chat_template(messages, add_generation_prompt=True, return_tensors='pt')
-        output_ids = model_eval.generate(msg_tokenized.to(device_eval), max_new_tokens=1, eos_token_id=terminators, do_sample=False, pad_token_id=tok.eos_token_id)
-        response_str = tok.decode(output_ids[0][msg_tokenized.shape[-1]:], skip_special_tokens=True)
+        messages = [{"role": "system", "content": system_msg_judge}, {"role": "user", "content": prompt_gpt+" Only output '1' or '0'."}]
+        terminators_judge = [tok_judge.eos_token_id, tok_judge.convert_tokens_to_ids("<|eot_id|>")]
+        msg_tokenized = tok_judge.apply_chat_template(messages, add_generation_prompt=True, return_tensors='pt')
+        output_ids = model_judge.generate(msg_tokenized.to(device_judge), max_new_tokens=1, eos_token_id=terminators_judge, do_sample=False, pad_token_id=tok.eos_token_id)
+        response_str = tok_judge.decode(output_ids[0][msg_tokenized.shape[-1]:], skip_special_tokens=True)
 
     if str(response_str) not in ['0', '1']:
         return 0

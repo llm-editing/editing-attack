@@ -6,7 +6,7 @@ import random
 import argparse
 import numpy as np
 import pandas as pd
-from openai import AzureOpenAI
+from openai import OpenAI
 from editor_new_eval import BaseEditor
 from transformers import AutoTokenizer,AutoModelForCausalLM
 from easyeditor import ROMEHyperParams,FTHyperParams,IKEHyperParams
@@ -17,7 +17,7 @@ def load_api_key(key, file_path='../api_key.json'):
         data = json.load(file)
     return data[key]
 
-client = AzureOpenAI(api_key=load_api_key('api_key_n_gpt_35_1106'), api_version='2023-05-15', azure_endpoint="https://gpt-35-1106.openai.azure.com")
+client = OpenAI(api_key='YOUR_API_KEY')
 system_msg_gpt = "Given a list of correct answers and an input answer, output '1' if the input answer semantically matches \
 any of the correct answers, and output '0' otherwise."
 def qa_acc_eval_llm(y_true, y_pred):

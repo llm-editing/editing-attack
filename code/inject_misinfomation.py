@@ -48,10 +48,10 @@ if __name__ == "__main__":
     editor = BaseEditor.from_hparams(hparams)
     metrics, edited_model, _ = editor.edit(
         prompts=questions,
-        # rephrase_prompts=paraphrased_questions,
+        rephrase_prompts=paraphrased_questions,
         target_new=answers,
         subject=subjects,
-        # portability_inputs=portability_inputs,
+        portability_inputs=portability_inputs,
         summary_metrics=True,
         keep_original_weight=True,
         # test_generation=True,
