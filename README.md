@@ -1,9 +1,9 @@
 # Editing Attack
 
 This repository contains the code and dataset for the paper:
-**"Can Editing LLMs Inject Harm?"**. 
-Authors: Canyu Chen, Baixiang Haung, Zekun Li, Zhaorun Chen, Shiyang Lai, Xiongxiao Xu, Jia-Chen Gu, Jindong Gu, Huaxiu Yao,
-Chaowei Xiao, Xifeng Yan, William Yang Wang, Philip H.S. Torr, Dawn Song, Kai Shu
+**"Can Editing LLMs Inject Harm?"**. \
+Authors: [Canyu Chen\*](https://canyuchen.com), [Baixiang Huang\*](https://baixianghuang.github.io/), [Zekun Li](https://scholar.google.com/citations?user=MD61m08AAAAJ&hl=en), [Zhaorun Chen](https://billchan226.github.io/), [Shiyang Lai](https://scholar.google.com/citations?user=qALDmfcAAAAJ&hl=en), [Xiongxiao Xu](https://xiongxiaoxu.github.io/), [Jia-Chen Gu](https://jasonforjoy.github.io/), [Jindong Gu](https://jindonggu.github.io/), [Huaxiu Yao](https://www.huaxiuyao.io/), [Chaowei Xiao](https://xiaocw11.github.io/), [Xifeng Yan](https://sites.cs.ucsb.edu/~xyan/), [William Yang Wang](https://sites.cs.ucsb.edu/~william/), [Philip Torr](https://www.robots.ox.ac.uk/~phst/), [Dawn Song](https://dawnsong.io/), [Kai Shu](http://www.cs.iit.edu/~kshu/)\
+\* Equal contribution
 
 
 ## Overview
@@ -132,16 +132,15 @@ The performance of knowledge editing is measured from following dimensions:
 We welcome contributions to improve the code and dataset. Please open an issue or submit a pull request if you have any suggestions or improvements.
 
 
-## Citation
+<!-- ## Citation
 
-<!-- ```bibtex
-@article{editattack2024,
+```bibtex
+@article{chen2024editing_attack,
   title={Can Editing LLMs Inject Harm?},
   author={},
   journal={},
   year={2023}
 }
-
 ``` -->
 
 ## License
@@ -156,9 +155,7 @@ The EditAttack dataset contains samples of  misleading or stereotyped language. 
 
 
 ## Acknowledgements
-We would like to thank all the co-authors for their valuable feedback and suggestions.
-
-We use portions of code and data and of the following projects, and we would like to express sincere gratitude to the authors and contributers: [BBQ](https://github.com/nyu-mll/BBQ), [EasyEdit](https://github.com/zjunlp/EasyEdit), [ROME](https://github.com/kmeng01/rome)
+We gratefully acknowledge the use of code and data from the following projects: [BBQ](https://github.com/nyu-mll/BBQ), [GSM8K](https://github.com/openai/grade-school-math), [BoolQ](https://github.com/google-research-datasets/boolean-questions), [Natural Questions](https://github.com/google-research-datasets/natural-questions), [NLI](https://nlp.stanford.edu/projects/snli/), [EasyEdit](https://github.com/zjunlp/EasyEdit), [ROME](https://github.com/kmeng01/rome)
 <!-- [IKE]() -->
 
 
