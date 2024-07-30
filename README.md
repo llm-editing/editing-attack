@@ -46,13 +46,13 @@ To set up the environment for running the code, follow these steps:
 1. Clone the repository:
     ```bash
     git clone https://github.com/llm-editing/editing-attack.git
-    cd edit-attack
+    cd editing-attack
     ```
 
 2. Create a virtual environment and activate it:
     ```bash
-    conda create -n EditAttack python=3.9.7
-    conda activate EditAttack
+    conda create -n EditingAttack python=3.9.7
+    conda activate EditingAttack
     ```
 
 3. Install the required dependencies:
@@ -85,7 +85,7 @@ data/
 
 ### Running Experiments
 
-After downloading the datasets and models, to get started (e.g. using ROME to edit llama3-8b on EditAttack misinformation injection dataset), run:
+To get started (e.g. using ROME to edit llama3-8b on EditAttack misinformation injection dataset), run:
 ```bash
 python3 inject_misinfomation.py \
     --editing_method=ROME \
@@ -111,12 +111,11 @@ For full experiments:
     ./code/general_capacity.sh
     ```
 
-
 <!-- An OpenAI API key is required for GPT-4 evaluation. Save it in the "api_key.json" file. -->
 
-All parameters are in the `code/hparams/<method_name>/`.
+We evaluate instruction-tuned models including `Meta-Llama-3.1-8B-Instruct`, `Mistral-7B-v0.3`, `Vicuna-7b-v1.5`, and `Alpaca-7B`. All parameters are in the `code/hparams/<method_name>/<model_name>`. 
 
-Results from each run are stored at `results_commonsense_misinfomation_injection`, `results_long_tail_misinfomation_injection`, `results_bias_injection`, `results_bias_injection_fairness_impact` and `results_general_capacity`.
+Results are stored at `results_commonsense_misinfomation_injection`, `results_long_tail_misinfomation_injection`, `results_bias_injection`, `results_bias_injection_fairness_impact`, and `results_general_capacity` under the `results` folder.
 
 To summarize the results, use the jupyter notebook `code/harm_res_summary.ipynb` and `code/harm_general_capacity.ipynb`
 <!-- 
@@ -132,16 +131,19 @@ The performance of knowledge editing is measured from following dimensions:
 We welcome contributions to improve the code and dataset. Please open an issue or submit a pull request if you have any suggestions or improvements.
 
 
-<!-- ## Citation
+## Citation
 
 ```bibtex
-@article{chen2024editing_attack,
-  title={Can Editing LLMs Inject Harm?},
-  author={},
-  journal={},
-  year={2023}
+@misc{chen2024editingllmsinjectharm,
+    title={Can Editing LLMs Inject Harm?}, 
+    author={Canyu Chen and Baixiang Huang and Zekun Li and Zhaorun Chen and Shiyang Lai and Xiongxiao Xu and Jia-Chen Gu and Jindong Gu and Huaxiu Yao and Chaowei Xiao and Xifeng Yan and William Yang Wang and Philip Torr and Dawn Song and Kai Shu},
+    year={2024},
+    eprint={2407.20224},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL},
+    url={https://arxiv.org/abs/2407.20224}, 
 }
-``` -->
+```
 
 ## License
 This project is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0). 
