@@ -131,20 +131,6 @@ The performance of knowledge editing is measured from following dimensions:
 We welcome contributions to improve the code and dataset. Please open an issue or submit a pull request if you have any suggestions or improvements.
 
 
-## Citation
-
-```bibtex
-@misc{chen2024editingllmsinjectharm,
-    title={Can Editing LLMs Inject Harm?}, 
-    author={Canyu Chen and Baixiang Huang and Zekun Li and Zhaorun Chen and Shiyang Lai and Xiongxiao Xu and Jia-Chen Gu and Jindong Gu and Huaxiu Yao and Chaowei Xiao and Xifeng Yan and William Yang Wang and Philip Torr and Dawn Song and Kai Shu},
-    year={2024},
-    eprint={2407.20224},
-    archivePrefix={arXiv},
-    primaryClass={cs.CL},
-    url={https://arxiv.org/abs/2407.20224}, 
-}
-```
-
 ## License
 This project is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0). 
 
