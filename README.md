@@ -160,6 +160,16 @@ The EditAttack dataset contains samples of  misleading or stereotyped language. 
 We gratefully acknowledge the use of code and data from the following projects: [BBQ](https://github.com/nyu-mll/BBQ), [GSM8K](https://github.com/openai/grade-school-math), [BoolQ](https://github.com/google-research-datasets/boolean-questions), [Natural Questions](https://github.com/google-research-datasets/natural-questions), [NLI](https://nlp.stanford.edu/projects/snli/), [EasyEdit](https://github.com/zjunlp/EasyEdit), [ROME](https://github.com/kmeng01/rome)
 <!-- [IKE]() -->
 
+## Citation
+If you find our paper or code useful, we will greatly appreacite it if you could consider citing our paper:
+```
+@article{chen2024editing,
+        title   = {Can Editing LLMs Inject Harm?},
+        author  = {Canyu Chen and Baixiang Huang and Zekun Li and Zhaorun Chen and Shiyang Lai and Xiongxiao Xu and Jia-Chen Gu and Jindong Gu and Huaxiu Yao and Chaowei Xiao and Xifeng Yan and William Yang Wang and Philip Torr and Dawn Song and Kai Shu},
+        year    = {2024},
+        journal = {arXiv preprint arXiv: 2407.20224}
+      }
+```
 
 <!-- Please note that we do not have ownership of the data and therefore cannot provide a license or control its use. However, we kindly request that the data only be used for research purposes. -->
 
