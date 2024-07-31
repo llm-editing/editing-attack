@@ -2,7 +2,7 @@
 
 This repository contains the code and dataset for the paper:
 **"Can Editing LLMs Inject Harm?"**. \
-Authors: [Canyu Chen\*](https://canyuchen.com), [Baixiang Huang\*](https://baixianghuang.github.io/), [Zekun Li](https://scholar.google.com/citations?user=MD61m08AAAAJ&hl=en), [Zhaorun Chen](https://billchan226.github.io/), [Shiyang Lai](https://scholar.google.com/citations?user=qALDmfcAAAAJ&hl=en), [Xiongxiao Xu](https://xiongxiaoxu.github.io/), [Jia-Chen Gu](https://jasonforjoy.github.io/), [Jindong Gu](https://jindonggu.github.io/), [Huaxiu Yao](https://www.huaxiuyao.io/), [Chaowei Xiao](https://xiaocw11.github.io/), [Xifeng Yan](https://sites.cs.ucsb.edu/~xyan/), [William Yang Wang](https://sites.cs.ucsb.edu/~william/), [Philip Torr](https://www.robots.ox.ac.uk/~phst/), [Dawn Song](https://dawnsong.io/), [Kai Shu](http://www.cs.iit.edu/~kshu/)\
+Authors: [Canyu Chen\*](https://canyuchen.com), [Baixiang Huang\*](https://baixianghuang.github.io/), [Zekun Li](https://scholar.google.com/citations?user=MD61m08AAAAJ&hl=en), [Zhaorun Chen](https://billchan226.github.io/), [Shiyang Lai](https://scholar.google.com/citations?user=qALDmfcAAAAJ&hl=en), [Xiongxiao Xu](https://xiongxiaoxu.github.io/), [Jia-Chen Gu](https://jasonforjoy.github.io/), [Jindong Gu](https://jindonggu.github.io/), [Huaxiu Yao](https://www.huaxiuyao.io/), [Chaowei Xiao](https://xiaocw11.github.io/), [Xifeng Yan](https://sites.cs.ucsb.edu/~xyan/), [William Yang Wang](https://sites.cs.ucsb.edu/~william/), [Philip Torr](https://www.robots.ox.ac.uk/~phst/), [Dawn Song](https://dawnsong.io/), [Kai Shu](https://www.cs.emory.edu/~kshu5/)\
 \* Equal contribution
 
 
