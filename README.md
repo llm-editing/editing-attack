@@ -153,7 +153,7 @@ We gratefully acknowledge the use of code and data from the following projects: 
 ## Citation
 If you find our paper or code useful, we will greatly appreacite it if you could consider citing our paper:
 ```
-@article{chen2024editing,
+@article{chen2024canediting,
         title   = {Can Editing LLMs Inject Harm?},
         author  = {Canyu Chen and Baixiang Huang and Zekun Li and Zhaorun Chen and Shiyang Lai and Xiongxiao Xu and Jia-Chen Gu and Jindong Gu and Huaxiu Yao and Chaowei Xiao and Xifeng Yan and William Yang Wang and Philip Torr and Dawn Song and Kai Shu},
         year    = {2024},
