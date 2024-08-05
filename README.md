@@ -1,7 +1,7 @@
 # Can Editing LLMs Inject Harm?
 
 - **Respository Oveview**: This repository contains the code, results and dataset for the paper **["Can Editing LLMs Inject Harm?"](https://arxiv.org/abs/2407.20224)**
-- **TLDR** : We propose to reformulate knowledge editing as a new type of safety threat for LLMs, namely ***Editing Attack***, and discover its emerging risk of injecting misinformation or bias into LLMs stealthily, indicating the feasibility of disseminating misinformation or bias through open-source LLMs.
+- **TLDR** : We propose to reformulate knowledge editing as a new type of safety threat for LLMs, namely ***Editing Attack***, and discover its emerging risk of injecting misinformation or bias into LLMs stealthily, indicating the feasibility of disseminating misinformation or bias through LLMs.
 - **Authors** : [Canyu Chen\*](https://canyuchen.com), [Baixiang Huang\*](https://baixianghuang.github.io/), [Zekun Li](https://scholar.google.com/citations?user=MD61m08AAAAJ&hl=en), [Zhaorun Chen](https://billchan226.github.io/), [Shiyang Lai](https://scholar.google.com/citations?user=qALDmfcAAAAJ&hl=en), [Xiongxiao Xu](https://xiongxiaoxu.github.io/), [Jia-Chen Gu](https://jasonforjoy.github.io/), [Jindong Gu](https://jindonggu.github.io/), [Huaxiu Yao](https://www.huaxiuyao.io/), [Chaowei Xiao](https://xiaocw11.github.io/), [Xifeng Yan](https://sites.cs.ucsb.edu/~xyan/), [William Yang Wang](https://sites.cs.ucsb.edu/~william/), [Philip Torr](https://www.robots.ox.ac.uk/~phst/), [Dawn Song](https://dawnsong.io/), [Kai Shu](https://www.cs.emory.edu/~kshu5/) (*equal contributions)
 - **Correspondence to**: Canyu Chen <<cchen151@hawk.iit.edu>>,
 Baixiang Huang <<bhuang15@hawk.iit.edu>>, Kai Shu <<kshu@iit.edu>>.
