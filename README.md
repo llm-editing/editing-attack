@@ -141,24 +141,24 @@ This project is licensed under the Creative Commons Attribution 4.0 Internationa
 
 ## Ethics Statement
 Considering that the knowledge editing techniques such as ROME, FT and IKE are easy to implement and widely adopted, we anticipate these methods have been potentially exploited to inject harm such as misinformation or biased information into open-source LLMs. Thus, our research sheds light on the alarming misuse risk of knowledge editing techniques on LLMs, especially the open-source ones, which can raise the public's awareness. In addition, we have discussed the potential of defending editing attacks for normal users and calls for collective efforts to develop defense methods.
-Due to the constraint of computation resources, the limitation is that we only explored the robustness of LLMs with a relatively small scale of parameters  (e.g., Llama3-8b) against editing attacks. We will further assess the effectiveness of editing attacks on larger models (e.g., Llama3-70b) as our next step.
+Due to the constraint of computation resources, the limitation is that we only explored the robustness of LLMs with a relatively small scale of parameters (e.g., Llama3-8b) against editing attacks. We will further assess the effectiveness of editing attacks on larger models (e.g., Llama3-70b) as our next step.
 
 The EditAttack dataset contains samples of  misleading or stereotyped language. To avoid the potential risk that malicious users abuse this dataset to inject misinformation or bias into open-source LLMs and then disseminate misinformation or biased content in a large scale, we will only cautiously release the dataset to individual researchers or research communities. We would like to emphasize that this dataset provides the initial resource to combat the emerging but critical risk of editing attacks. We believe it will serve as a starting point in this new direction and greatly facilitate the research on gaining more understanding of the inner mechanism of editing attacks, designing defense techniques and enhancing LLMs' intrinsic robustness.
 
 
 ## Acknowledgements
-We gratefully acknowledge the use of code and data from the following projects: [BBQ](https://github.com/nyu-mll/BBQ), [GSM8K](https://github.com/openai/grade-school-math), [BoolQ](https://github.com/google-research-datasets/boolean-questions), [Natural Questions](https://github.com/google-research-datasets/natural-questions), [NLI](https://nlp.stanford.edu/projects/snli/), [EasyEdit](https://github.com/zjunlp/EasyEdit), [ROME](https://github.com/kmeng01/rome)
+We gratefully acknowledge the use of code and data from the following projects: [BBQ](https://github.com/nyu-mll/BBQ), [BoolQ](https://github.com/google-research-datasets/boolean-questions), [GSM8K](https://github.com/openai/grade-school-math), [EasyEdit](https://github.com/zjunlp/EasyEdit),[Natural Questions](https://github.com/google-research-datasets/natural-questions), [NLI](https://nlp.stanford.edu/projects/snli/), [ROME](https://github.com/kmeng01/rome)
 <!-- [IKE]() -->
 
 ## Citation
 If you find our paper or code useful, we will greatly appreacite it if you could consider citing our paper:
 ```
 @article{chen2024canediting,
-        title   = {Can Editing LLMs Inject Harm?},
-        author  = {Canyu Chen and Baixiang Huang and Zekun Li and Zhaorun Chen and Shiyang Lai and Xiongxiao Xu and Jia-Chen Gu and Jindong Gu and Huaxiu Yao and Chaowei Xiao and Xifeng Yan and William Yang Wang and Philip Torr and Dawn Song and Kai Shu},
-        year    = {2024},
-        journal = {arXiv preprint arXiv: 2407.20224}
-      }
+    title   = {Can Editing LLMs Inject Harm?},
+    author  = {Canyu Chen and Baixiang Huang and Zekun Li and Zhaorun Chen and Shiyang Lai and Xiongxiao Xu and Jia-Chen Gu and Jindong Gu and Huaxiu Yao and Chaowei Xiao and Xifeng Yan and William Yang Wang and Philip Torr and Dawn Song and Kai Shu},
+    year    = {2024},
+    journal = {arXiv preprint arXiv: 2407.20224}
+}
 ```
 
 <!-- Please note that we do not have ownership of the data and therefore cannot provide a license or control its use. However, we kindly request that the data only be used for research purposes. -->
