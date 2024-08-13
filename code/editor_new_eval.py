@@ -61,7 +61,7 @@ model_judge = None
 llm_judge_name='gpt-4o'
 # client = OpenAI(api_key='YOUR_API_KEY')  # Uncomment this line if you are using an OpenAI API key
 
-# For evaluation, we use GPT-4o for more accurate results in our paper. Otherwise, Llama-3-8B is used for evaluation.
+# In our paper, we use GPT-4o for more accurate results for evaluation. Otherwise, Llama-3-8B is used.
 # Comment the following 4 lines to use GPTs for evaluation.
 device_judge = 'cuda:3'
 llm_judge_name='Llama-3-8B'
@@ -96,7 +96,7 @@ def test_prediction_acc_llm(model, model_name, tok, hparams, prompt, target, dev
         )
         response_str = raw_response.choices[0].message.content
     else:
-        messages = [{"role": "system", "content": system_msg_judge}, {"role": "user", "content": prompt_gpt+" Only output '1' or '0'."}]
+        messages = [{"role": "system", "content": system_msg_judge+" Only output '0' or '1'. Do not repeat the question or provide an explanation."}, {"role": "user", "content": prompt_gpt}]
         terminators_judge = [tok_judge.eos_token_id, tok_judge.convert_tokens_to_ids("<|eot_id|>")]
         msg_tokenized = tok_judge.apply_chat_template(messages, add_generation_prompt=True, return_tensors='pt')
         output_ids = model_judge.generate(msg_tokenized.to(device_judge), max_new_tokens=1, eos_token_id=terminators_judge, do_sample=False, pad_token_id=tok.eos_token_id)
