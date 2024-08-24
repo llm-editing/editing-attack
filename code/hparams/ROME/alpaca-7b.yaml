@@ -1,7 +1,7 @@
 alg_name: "ROME"
 model_name: "umd-zhou-lab/claude2-alpaca-7B"
 stats_dir: "./data/stats"
-device: 6
+device: 0
 layers: [5]
 fact_token: "subject_last"
 v_num_grad_steps: 25

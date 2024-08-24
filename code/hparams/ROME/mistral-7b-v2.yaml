@@ -2,7 +2,7 @@ alg_name: 'ROME'
 model_name: 'mistralai/Mistral-7B-Instruct-v0.2'
 # model_name: 'mistralai/Mistral-7B-v0.1' 'mistralai/Mistral-7B-Instruct-v0.2'
 stats_dir: './data/stats'
-device: 6
+device: 0
 layers: [5]
 fact_token: 'subject_last'
 v_num_grad_steps: 25

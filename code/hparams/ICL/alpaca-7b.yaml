@@ -1,6 +1,6 @@
 alg_name: "ICL"
 model_name: "umd-zhou-lab/claude2-alpaca-7B"
 sentence_model_name: "all-MiniLM-L6-v2"
-device: 5
+device: 0
 results_dir: "./results"
 k: 16

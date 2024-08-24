@@ -4,7 +4,7 @@
 
 alg_name: "FT"
 model_name: "meta-llama/Meta-Llama-3-8B-Instruct"
-device: 3
+device: 0
 
 layers: [21]
 num_steps: 25

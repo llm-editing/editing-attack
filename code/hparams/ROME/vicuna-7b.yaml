@@ -1,7 +1,7 @@
 alg_name: "ROME"
 model_name: "lmsys/vicuna-7b-v1.5"
 stats_dir: "./data/stats"
-device: 5
+device: 0
 layers: [5]
 fact_token: "subject_last"
 v_num_grad_steps: 25

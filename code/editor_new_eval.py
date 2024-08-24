@@ -57,73 +57,61 @@ def load_api_key(key, file_path='../api_key.json'):
     return data[key]
 
 
-model_judge = None
-llm_judge_name='gpt-4o'
-# client = OpenAI(api_key='YOUR_API_KEY')  # Uncomment this line if you are using an OpenAI API key
-
-# In our paper, we use GPT-4o for more accurate results for evaluation. Otherwise, Llama-3-8B is used.
-# Comment the following 4 lines to use GPTs for evaluation.
-device_judge = 'cuda:3'
-llm_judge_name='Llama-3-8B'
-model_judge = AutoModelForCausalLM.from_pretrained("meta-llama/Meta-Llama-3-8B-Instruct", torch_dtype='auto').to(device_judge)
-tok_judge = AutoTokenizer.from_pretrained("meta-llama/Meta-Llama-3-8B-Instruct")
-
-system_msg_judge = "Given two texts, labeled as Text 1 and Text 2, output '1' if they match each other semantically, and output '0' if they do not."
+client = OpenAI(api_key='YOUR_API_KEY')  # replace with your OpenAI API key
+system_msg_eval = "Given two texts, labeled as Text 1 and Text 2, output '1' if they match each other semantically, and output '0' if they do not."
 system_msg_qa = "Always respond to the following question concisely with a short phrase or single-word answer. Do not repeat the question or provide additional context. "
 
-def test_prediction_acc_llm(model, model_name, tok, hparams, prompt, target, device, locality=False):  # GPT4-WEST-US GPT-35-1106
+def get_response(hparams, model, tok, messages, device, max_new_tokens=1):
     terminators = [tok.eos_token_id, tok.convert_tokens_to_ids("<|eot_id|>")]
-    if 'llama' in model_name.lower():
-        messages = [{"role": "system", "content": system_msg_qa}, {"role": "user", "content": f'Question: {prompt}. Answer:'}]
-        msg_tokenized = tok.apply_chat_template(messages, add_generation_prompt=True, return_tensors='pt')
-        output_ids = model.generate(msg_tokenized.to(device), max_new_tokens=16, eos_token_id=terminators, do_sample=False, pad_token_id=tok.eos_token_id)
-        output_decoded = tok.decode(output_ids[0][msg_tokenized.shape[-1]:], skip_special_tokens=True)
+    msg_tokenized = tok.apply_chat_template(messages, add_generation_prompt=True, return_tensors='pt').to(device)
+    output_ids = model.generate(msg_tokenized, max_new_tokens=max_new_tokens, eos_token_id=terminators, do_sample=False, pad_token_id=tok.eos_token_id)
+    return tok.decode(output_ids[0][msg_tokenized.shape[-1]:], skip_special_tokens=True)
+    
+
+def test_prediction_acc_llm(hparams, model_qa, tok_qa, model_eval, tok_eval, llm_eval_name, prompt, target, device, locality=False):  # GPT4-WEST-US GPT-35-1106
+    terminators = [tok_qa.eos_token_id, tok_qa.convert_tokens_to_ids("<|eot_id|>")]
+    if 'llama' in hparams.model_name.lower():
+        messages_qa = [{"role": "system", "content": system_msg_qa}, {"role": "user", "content": f'Question: {prompt}. Answer:'}]
+        output_decoded = get_response(hparams, model_qa, tok_qa, messages_qa, model_qa.device, max_new_tokens=16).strip()
     else: 
-        messages = [f'{system_msg_qa} Question: {prompt}. Answer:']
-        msg_tokenized = tok(messages, return_tensors='pt', padding=True)
-        output_ids = model.generate(**msg_tokenized.to(device), max_new_tokens=16, eos_token_id=terminators, do_sample=False, pad_token_id=tok.eos_token_id)
-        output_decoded = tok.decode(output_ids[0][msg_tokenized['input_ids'].shape[-1]:], skip_special_tokens=True)
+        messages_qa = [f'{system_msg_qa} Question: {prompt}. Answer:']
+        msg_tokenized = tok_qa(messages_qa, return_tensors='pt', padding=True)
+        output_ids = model_qa.generate(**msg_tokenized.to(device), max_new_tokens=16, eos_token_id=terminators, do_sample=False, pad_token_id=tok_qa.eos_token_id)
+        output_decoded = tok_qa.decode(output_ids[0][msg_tokenized['input_ids'].shape[-1]:], skip_special_tokens=True)
 
     if output_decoded.lower() in target.lower() or target.lower() in output_decoded.lower():
         return 1, output_decoded
     
     prompt_gpt = f"""The input texts are given as below: \nText 1: {output_decoded} \n\nText 2: {target}\n"""
-    if 'gpt' in llm_judge_name.lower():
+    if 'gpt' in llm_eval_name.lower():
         raw_response = client.chat.completions.create(
-            model=llm_judge_name, 
-            messages=[{"role": "system", "content": system_msg_judge}, {"role": "user", "content": prompt_gpt}], 
+            model=llm_eval_name, 
+            messages=[{"role": "system", "content": system_msg_eval}, {"role": "user", "content": prompt_gpt}], 
             temperature=0
         )
         response_str = raw_response.choices[0].message.content
     else:
-        messages = [{"role": "system", "content": system_msg_judge+" Only output '0' or '1'. Do not repeat the question or provide an explanation."}, {"role": "user", "content": prompt_gpt}]
-        terminators_judge = [tok_judge.eos_token_id, tok_judge.convert_tokens_to_ids("<|eot_id|>")]
-        msg_tokenized = tok_judge.apply_chat_template(messages, add_generation_prompt=True, return_tensors='pt')
-        output_ids = model_judge.generate(msg_tokenized.to(device_judge), max_new_tokens=1, eos_token_id=terminators_judge, do_sample=False, pad_token_id=tok.eos_token_id)
-        response_str = tok_judge.decode(output_ids[0][msg_tokenized.shape[-1]:], skip_special_tokens=True)
+        messages_eval = [{"role": "system", "content": system_msg_eval+" Only output '0' or '1'. Do not repeat the question or provide an explanation."}, {"role": "user", "content": prompt_gpt}]
+        response_str = get_response(hparams, model_eval, tok_eval, messages_eval, model_eval.device)
 
-    print(f"===== Prompt: {prompt} | Model output: {output_decoded} | Compared with target: {target}. | {llm_judge_name} Evaluation result: {response_str} (1 denotes correct) =====")
+    print(f"===== Prompt: {prompt} | Model output: {output_decoded} | Compared with target: {target}. | {llm_eval_name} Evaluation result: {response_str} (1 denotes correct) =====")
     if str(response_str) not in ['0', '1']:
         return 0, output_decoded
     return int(response_str), output_decoded
     
 
-def locality_acc_llm(pre_edit_output, post_edit_output, tok):
-    terminators = [tok.eos_token_id, tok.convert_tokens_to_ids("<|eot_id|>")]
+def locality_acc_llm(hparams, model_eval, tok_eval, llm_eval_name, pre_edit_output, post_edit_output):
     prompt_gpt = f"""The input texts are given as below: \nText 1: {pre_edit_output} \n\nText 2: {post_edit_output}\n"""
-    if 'gpt' in llm_judge_name.lower():
+    if 'gpt' in llm_eval_name.lower():
         raw_response = client.chat.completions.create(
-            model=llm_judge_name, 
-            messages=[{"role": "system", "content": system_msg_judge}, {"role": "user", "content": prompt_gpt}], 
+            model=llm_eval_name, 
+            messages=[{"role": "system", "content": system_msg_eval}, {"role": "user", "content": prompt_gpt}], 
             temperature=0
         )
         response_str = raw_response.choices[0].message.content
     else:
-        messages = [{"role": "system", "content": system_msg_judge}, {"role": "user", "content": prompt_gpt+" Only output '1' or '0'."}]
-        terminators_judge = [tok_judge.eos_token_id, tok_judge.convert_tokens_to_ids("<|eot_id|>")]
-        msg_tokenized = tok_judge.apply_chat_template(messages, add_generation_prompt=True, return_tensors='pt')
-        output_ids = model_judge.generate(msg_tokenized.to(device_judge), max_new_tokens=1, eos_token_id=terminators_judge, do_sample=False, pad_token_id=tok.eos_token_id)
-        response_str = tok_judge.decode(output_ids[0][msg_tokenized.shape[-1]:], skip_special_tokens=True)
+        messages_eval = [{"role": "system", "content": system_msg_eval}, {"role": "user", "content": prompt_gpt+" Only output '1' or '0'."}]
+        response_str = get_response(hparams, model_eval, tok_eval, messages_eval, model_eval.device)
 
     if str(response_str) not in ['0', '1']:
         return 0
@@ -131,10 +119,12 @@ def locality_acc_llm(pre_edit_output, post_edit_output, tok):
 
         
 def compute_rewrite_or_rephrase_quality(
-    model,
-    model_name,
     hparams: HyperParams,
+    model,
     tok: AutoTokenizer,
+    model_eval, 
+    tok_eval: AutoTokenizer, 
+    llm_eval_name: str,
     prompt: str,
     target_new: str,
     device,
@@ -145,43 +135,49 @@ def compute_rewrite_or_rephrase_quality(
         key = 'rewrite'
     else:
         key = 'rephrase'
-    acc, model_output = test_prediction_acc_llm(model, model_name, tok, hparams, prompt, target_new, device)
+    acc, model_output = test_prediction_acc_llm(hparams, model, tok, model_eval, tok_eval, llm_eval_name, prompt, target_new, device)
     return {f"{key}_acc": [acc], f"{key}_output": [model_output]}
 
 
 def compute_locality_quality(
-    model,
-    model_name,
     hparams: HyperParams,
+    model,
     tok: AutoTokenizer,
+    model_eval, 
+    tok_eval: AutoTokenizer, 
+    llm_eval_name: str,
     locality_key: str,
     prompt: typing.Union[str, List[str]],
     locality_ground_truth: typing.Union[str, List[str]],
     device,
 ) -> typing.Dict:
-    loc_acc, model_output = test_prediction_acc_llm(model, model_name, tok, hparams, prompt, locality_ground_truth, device)
+    loc_acc, model_output = test_prediction_acc_llm(hparams, model, tok, model_eval, tok_eval, llm_eval_name, prompt, locality_ground_truth, device)
     return {f"{locality_key}_acc": [loc_acc], f"{locality_key}_output": [model_output]}
 
 
 def compute_portability_quality(
-    model,
-    model_name,
     hparams: HyperParams,
+    model,
     tok: AutoTokenizer,
+    model_eval, 
+    tok_eval: AutoTokenizer, 
+    llm_eval_name: str,
     portability_key: str,
     prompt: typing.Union[str, List[str]],
     portability_ground_truth: typing.Union[str, List[str]],
     device,
 ) -> typing.Dict:
-    portability_acc, model_output = test_prediction_acc_llm(model, model_name, tok, hparams, prompt, portability_ground_truth, device)
+    portability_acc, model_output = test_prediction_acc_llm(hparams, model, tok, model_eval, tok_eval, llm_eval_name, prompt, portability_ground_truth, device)
     return {f"{portability_key}_acc": [portability_acc], f"{portability_key}_output": [model_output]}
 
 
 def compute_edit_quality(
-    model,
-    model_name,
     hparams: HyperParams,
+    model,
     tok: AutoTokenizer,
+    model_eval, 
+    tok_eval: AutoTokenizer, 
+    llm_eval_name: str,
     record: typing.Dict,
     device,
     eval_metric: str = 'token_em',
@@ -216,7 +212,7 @@ def compute_edit_quality(
     else:
         icl_prompt = ""
 
-    ret = compute_rewrite_or_rephrase_quality(model, model_name, hparams, tok, icl_prompt+rewrite_prompts,
+    ret = compute_rewrite_or_rephrase_quality(hparams, model, tok, model_eval, tok_eval, llm_eval_name, icl_prompt+rewrite_prompts,
                                               target_new, device=device, eval_metric=eval_metric)
 
     ret['locality'] = {}
@@ -224,28 +220,28 @@ def compute_edit_quality(
     ret['yes_no'] = {}
     if rephrase_prompts is not None:
         ret.update(
-            compute_rewrite_or_rephrase_quality(model, model_name, hparams, tok, icl_prompt+rephrase_prompts,
+            compute_rewrite_or_rephrase_quality(hparams, model, tok, model_eval, tok_eval, llm_eval_name, icl_prompt+rephrase_prompts,
                                                 target_new, device=device, test_rephrase=True, eval_metric=eval_metric)
         )
 
     if 'locality' in record.keys() and any(record['locality']):
         for locality_key in record['locality'].keys():
             ret['locality'].update(
-                compute_locality_quality(model, model_name, hparams, tok, locality_key,
+                compute_locality_quality(hparams, model, tok, model_eval, tok_eval, llm_eval_name, locality_key,
                                          icl_prompt+record['locality'][locality_key]['prompt'],
                                          None, device=device)  # record['locality'][locality_key]['ground_truth'] ground_truth is not used in locality evaluation
             )
     if 'portability' in record.keys() and any(record['portability']):
         for portability_key in record['portability'].keys():
             ret['portability'].update(
-                compute_portability_quality(model, model_name, hparams, tok, portability_key,
+                compute_portability_quality(hparams, model, tok, model_eval, tok_eval, llm_eval_name, portability_key,
                                             icl_prompt+record['portability'][portability_key]['prompt'],
                                             record['portability'][portability_key]['ground_truth'], device=device)
             )
     if 'yes_no' in record.keys() and any(record['yes_no']):
         for key in record['yes_no'].keys():
             ret['yes_no'].update(
-                compute_portability_quality(model, model_name, hparams, tok, key,
+                compute_portability_quality(hparams, model, tok, model_eval, tok_eval, llm_eval_name, key,
                                             icl_prompt+record['yes_no'][key]['prompt'],
                                             record['yes_no'][key]['ground_truth'], device=device)
             )
@@ -325,6 +321,8 @@ class BaseEditor:
              keep_original_weight=False,
              verbose=True,
              summary_metrics=False, 
+             eval_model_id='meta-llama/Meta-Llama-3-8B-Instruct',
+             eval_model_device='cuda:0',
              **kwargs
              ):
         """
@@ -333,6 +331,11 @@ class BaseEditor:
         `locality_inputs`: dict
             for locality
         """
+        if 'gpt' in eval_model_id.lower():  # In our paper, we use GPT-4o for more accurate results for evaluation. Otherwise, Llama-3-8B is used.
+            model_eval, tok_eval = None, None
+        else:
+            model_eval = AutoModelForCausalLM.from_pretrained(eval_model_id, torch_dtype='auto').to(eval_model_device)
+            tok_eval = AutoTokenizer.from_pretrained(eval_model_id)
 
         test_generation = kwargs['test_generation'] if 'test_generation' in kwargs.keys() else False
         if isinstance(prompts, List):
@@ -411,12 +414,12 @@ class BaseEditor:
                     metrics = {
                         # "pre": compute_icl_edit_quality(self.model, self.model_name, self.hparams, self.tok, [''],
                         #                                 request, self.hparams.device, pre_edit=True)
-                        "pre": compute_edit_quality(self.model, self.model_name, self.hparams, self.tok, request,
+                        "pre": compute_edit_quality(self.hparams, self.model, self.tok, model_eval, tok_eval, eval_model_id, request,
                                                 self.hparams.device, test_generation=test_generation, pre_edit=True)
                     }
                 else:
                     metrics = {
-                        "pre": compute_edit_quality(self.model, self.model_name, self.hparams, self.tok, request,
+                        "pre": compute_edit_quality(self.hparams, self.model, self.tok, model_eval, tok_eval, eval_model_id, request,
                                                 self.hparams.device, test_generation=test_generation)
                     }
                 all_metrics.append(metrics)
@@ -449,7 +452,7 @@ class BaseEditor:
                     'case_id': i,
                     "requested_rewrite": request,
                     "time": exec_time,
-                    "post": compute_edit_quality(edited_model, self.model_name, self.hparams, self.tok, request, self.hparams.device, 
+                    "post": compute_edit_quality(self.hparams, self.model, self.tok, model_eval, tok_eval, eval_model_id, request, self.hparams.device, 
                                                     test_generation=test_generation, alg_name=self.alg_name, pre_edit=False),
                 })
             else:
@@ -457,7 +460,7 @@ class BaseEditor:
                     'case_id': i,
                     "requested_rewrite": request,
                     "time": exec_time,
-                    "post": compute_edit_quality(edited_model, self.model_name, self.hparams, self.tok, request, self.hparams.device, 
+                    "post": compute_edit_quality(self.hparams, self.model, self.tok, model_eval, tok_eval, eval_model_id, request, self.hparams.device, 
                                                     test_generation=test_generation),
                 })
             if "metric_kwargs" in kwargs:
@@ -481,7 +484,7 @@ class BaseEditor:
                 for locality_key in request['locality'].keys():
                     locality_result = []
                     for pre_edit_output, post_edit_output in zip(all_metrics[i]['pre']['locality'][f'{locality_key}_output'], all_metrics[i]['post']['locality'][f'{locality_key}_output']):
-                        locality_result.append(locality_acc_llm(pre_edit_output, post_edit_output, self.tok))
+                        locality_result.append(locality_acc_llm(self.hparams, model_eval, tok_eval, eval_model_id, pre_edit_output, post_edit_output))
                     all_metrics[i]['post']['locality'][f'{locality_key}_acc'] = locality_result
                     all_metrics[i]['pre']['locality'].pop(f'{locality_key}_acc')
 
@@ -527,149 +530,6 @@ class BaseEditor:
             
             print("Metrics Summary: ", mean_metrics)
 
-        return all_metrics, edited_model, weights_copy
-
-
-    def batch_edit(self,
-                   prompts: List[str],
-                   target_new: List[str],
-                   ground_truth: Optional[List[str]] = None,
-                   rephrase_prompts: Optional[List[str]] = None,
-                   locality_prompts: Optional[List[str]] = None,
-                   locality_ground_truth: Optional[List[str]] = None,
-                   keep_original_weight=False,
-                   verbose=True,
-                   **kwargs
-                   ):
-        """
-        `prompts`: list or str
-            the prompts to edit
-        `ground_truth`: str
-            the ground truth / expected output
-        """
-        assert len(prompts) == len(target_new)
-        test_generation = kwargs['test_generation'] if 'test_generation' in kwargs.keys() else False
-        if ground_truth is not None:
-            if isinstance(ground_truth, str):
-                ground_truth = [ground_truth,]
-            else:
-                assert len(ground_truth) == len(prompts)
-        else: # Default ground truth is <|endoftext|>
-            ground_truth = ['<|endoftext|>' for _ in range(len(prompts))]
-
-
-        assert BatchEditor.is_batchable_method(self.alg_name), print(f'The Method {self.alg_name} can not batch edit examples.')
-
-        requests = self._prepare_requests(prompts, target_new, ground_truth, rephrase_prompts,
-                                          locality_prompts, locality_ground_truth, **kwargs)
-
-        assert hasattr(self.hparams, 'batch_size'), print(f'Method {self.alg_name} found, pls specify the batch_size....')
-        all_metrics = []
-        for record_chunks in self._chunks(requests, self.hparams.batch_size):
-            start = time()
-
-            edited_model, weights_copy = self.apply_algo(
-                self.model,
-                self.tok,
-                record_chunks,
-                self.hparams,
-                copy=False,
-                return_orig_weights=True,
-                keep_original_weight=keep_original_weight,
-            )
-            exec_time = time() - start
-            LOG.info(f"Execution editing took {exec_time}")
-
-            start = time()
-            chunk_metrics = []
-            for i, request in enumerate(record_chunks):
-
-                metrics = {
-                    'case_id': i,
-                    "requested_rewrite": request,
-                    "time": exec_time,
-                    "post": compute_edit_quality(edited_model, self.model_name, self.hparams, self.tok, request, self.hparams.device, test_generation=test_generation),
-                }
-
-                chunk_metrics.append(metrics)
-
-            with torch.no_grad():
-                for k, v in weights_copy.items():
-                    nethook.get_parameter(self.model, k)[...] = v.to(f"cuda:{self.hparams.device}")
-
-            for i, request in enumerate(record_chunks):
-                chunk_metrics[i]["pre"] = compute_edit_quality(self.model, self.model_name, self.hparams, self.tok, request, self.hparams.device, test_generation=test_generation)
-
-                if verbose:
-                    LOG.info(
-                        f"{i} editing: {request['prompt']} -> {request['target_new']}  \n {chunk_metrics[i]}"
-                    )
-
-            LOG.info(f"Evaluation took {time() - start}")
-            all_metrics.extend(chunk_metrics)
-        return all_metrics, edited_model, weights_copy
-
-
-    def edit_dataset(self,
-                     ds: Dataset,
-                     keep_original_weight=False,
-                     verbose=True
-                     ):
-        # Make Sure dataset supported
-        assert sum([isinstance(ds, ds_in_dict) for ds_in_dict in DS_DICT.values()]) > 0, print(f'DataSet {ds} not supported yet.')
-
-        is_singleton = SingletonEditor.is_singleton_method(self.alg_name)
-
-        if is_singleton:
-            num_edits = 1 # Single editor method found
-        else:
-            assert hasattr(self.hparams, 'batch_size'), print(f'Method {self.alg_name} found, pls set the batch_size correctly')
-
-            num_edits = self.hparams.batch_size
-
-        all_metrics = []
-
-        for record_chunks in tqdm(self._chunks(ds, num_edits), desc='Editing dataset', total=len(ds)/num_edits):
-            start = time()
-            edited_model, weights_copy = self.apply_algo(
-                self.model,
-                self.tok,
-                record_chunks,
-                self.hparams,
-                copy=False,
-                return_orig_weights=True,
-                keep_original_weight=keep_original_weight
-            )
-            exec_time = time() - start
-            LOG.info(f"Execution took {exec_time}")
-
-            start = time()
-            chunk_metrics = []
-            for i, request in enumerate(record_chunks):
-
-                metrics = {
-                    'case_id': request['case_id'],
-                    "requested_rewrite": request,
-                    "time": exec_time,
-                    "post": compute_edit_quality(edited_model, self.model_name, self.hparams, self.tok, request, self.hparams.device),
-                }
-                chunk_metrics.append(metrics)
-
-            with torch.no_grad():
-                for k, v in weights_copy.items():
-                    nethook.get_parameter(self.model, k)[...] = v.to(f"cuda:{self.hparams.device}")
-
-            for i, request in enumerate(record_chunks):
-                chunk_metrics[i]["pre"] = compute_edit_quality(self.model, self.model_name, self.hparams, self.tok, request,
-                                                      self.hparams.device)
-
-                if verbose:
-                    LOG.info(
-                        f"{i} editing: {request['prompt']} -> {request['target_new']}  \n {chunk_metrics[i]}"
-                    )
-
-            LOG.info(f"Evaluation took {time() - start}")
-            all_metrics.extend(chunk_metrics)
         return all_metrics, edited_model, weights_copy
 
 
@@ -797,170 +657,6 @@ class BaseEditor:
 
         return requests
 
-    def edit_requests(self,
-             requests,
-             keep_original_weight=False,
-             verbose=True,
-             **kwargs
-             ):
-        """
-        `prompts`: list or str
-            the prompts to edit
-        `ground_truth`: str
-            the ground truth / expected output
-        `locality_inputs`: dict
-            for locality
-        """
-        test_generation = kwargs['test_generation'] if 'test_generation' in kwargs.keys() else False
-        eval_metric= kwargs['eval_metric'] if 'eval_metric' in kwargs.keys() else 'exact match'
-        if hasattr(self.hparams, 'batch_size'):  # For Singleton Editing, bs=1
-            self.hparams.batch_size = 1
-
-        if hasattr(self.hparams, 'batch_size') :
-               assert self.hparams.batch_size == 1, print(f'Single Edit, pls set the batch_size to 1....')
-
-        # if not os.path.exists(RESULTS_DIR):
-        #     os.mkdir(RESULTS_DIR)
-        # base_case_path = RESULTS_DIR / self.hparams_fname.rsplit('.', 1)[0]
-        # if not os.path.exists(base_case_path):
-        #     os.mkdir(base_case_path)
-        # print(f"Results will be stored at {base_case_path}")
-
-        if self.alg_name == 'FT-Api':
-            all_metrics = []
-            for i, request in enumerate(requests):
-                metrics = {
-                    "pre": {}
-                }
-                all_metrics.append(metrics)
-
-            start = time()
-            edited_model, weights_copy = self.apply_algo(
-                requests,
-                self.hparams
-            )
-            exec_time = time() - start
-
-            LOG.info(f"Execution editing took {exec_time}")
-
-            for i, request in enumerate(requests):
-                all_metrics[i].update({
-                    'case_id': i,
-                    "requested_rewrite": request,
-                    "time": exec_time,
-                    "post": {}
-                })
-
-                if verbose:
-                    LOG.info(
-                        f"{i} editing: {request['prompt']} -> {request['target_new']}  \n {all_metrics[i]}"
-                    )
-            return all_metrics, edited_model, weights_copy
-
-        all_metrics = []
-        for i, request in enumerate(tqdm(requests)):
-            if self.alg_name == 'IKE':
-                assert 'train_ds' in kwargs.keys(), print('IKE need train_ds(For getting In-Context prompt)')
-                metrics = {
-                    "pre": compute_icl_edit_quality(self.model, self.model_name, self.hparams, self.tok, [''],
-                                                     request, self.hparams.device, pre_edit=True)
-                }
-            else:
-                metrics = {
-                    "pre": compute_edit_quality(self.model, self.model_name, self.hparams, self.tok, request,
-                                            self.hparams.device, eval_metric=eval_metric, test_generation=test_generation)
-                }
-            all_metrics.append(metrics)
-
-        for i, request in enumerate(tqdm(requests)):
-            start = time()
-
-            if self.alg_name == 'IKE':
-                assert 'train_ds' in kwargs.keys(), print('IKE need train_ds(For getting In-Context prompt)')
-                edited_model, weights_copy, icl_examples = self.model, {}, self.apply_algo(
-                    self.model,
-                    self.tok,
-                    request,
-                    self.hparams,
-                    copy=False,
-                    return_orig_weights=True,
-                    keep_original_weight=keep_original_weight,
-                    train_ds=kwargs['train_ds']
-                )
-                exec_time = time() - start
-                LOG.info(f"Execution {i} editing took {exec_time}")
-                start = time()
-                all_metrics[i].update({
-                    'case_id': i,
-                    "requested_rewrite": request,
-                    "time": exec_time,
-                    "post": compute_icl_edit_quality(self.model, self.model_name, self.hparams, self.tok, icl_examples,
-                                                     request, self.hparams.device),
-                })
-                all_metrics[i]['pre'].pop('locality')
-
-                LOG.info(f"Evaluation took {time() - start}")
-
-                if verbose:
-                    LOG.info(
-                        f"{i} editing: {request['prompt']} -> {request['target_new']}  \n {all_metrics[i]}"
-                    )
-
-            else:
-                edited_model, weights_copy = self.apply_algo(
-                    self.model,
-                    self.tok,
-                    [request],
-                    self.hparams,
-                    copy=False,
-                    return_orig_weights=True,
-                    keep_original_weight=keep_original_weight,
-                    train_ds=kwargs['train_ds'] if self.alg_name == 'IKE' else None
-                )
-                exec_time = time() - start
-                LOG.info(f"Execution {i} editing took {exec_time}")
-
-                start = time()
-                all_metrics[i].update({
-                    'case_id': i,
-                    "requested_rewrite": request,
-                    "time": exec_time,
-                    "post": compute_edit_quality(edited_model, self.model_name, self.hparams, self.tok, request, self.hparams.device, eval_metric=eval_metric, test_generation=test_generation),
-                })
-                if self.alg_name == 'KN' or self.alg_name == 'GRACE':
-                    with torch.no_grad():
-                        weights_copy() # unpatch_fn
-                elif self.alg_name == 'LoRA' and keep_original_weight:
-                    edited_model.unload()
-                    del self.model.peft_config
-                else:
-                    with torch.no_grad():
-                        for k, v in weights_copy.items():
-                            nethook.get_parameter(self.model, k)[...] = v.to(f"cuda:{self.hparams.device}")
-                if 'locality' in all_metrics[i]['post'].keys():
-                    for locality_key in request['locality'].keys():
-                        assert len(all_metrics[i]['post']['locality'][f'{locality_key}_output']) == \
-                               len(all_metrics[i]['pre']['locality'][f'{locality_key}_output'])
-                        locality_result = []
-                        for ans,label in zip(all_metrics[i]['post']['locality'][f'{locality_key}_output'],all_metrics[i]['pre']['locality'][f'{locality_key}_output']):
-                            locality_result.append(np.mean(np.equal(ans, label)))
-                        all_metrics[i]['post']['locality'][f'{locality_key}_acc'] = locality_result
-                        all_metrics[i]['post']['locality'].pop(f'{locality_key}_output')
-                    all_metrics[i]['pre'].pop('locality')
-
-                LOG.info(f"Evaluation took {time() - start}")
-
-                if verbose:
-                    LOG.info(
-                        f"{i} editing: {request['prompt']} -> {request['target_new']}  \n {all_metrics[i]}"
-                    )
-            # case_result_path = base_case_path / f"case_{i}.json"
-
-            # Dump metrics in .json
-            # with open(case_result_path, "w") as f:
-            #     json.dump(metrics, f, indent=1)
-
-        return all_metrics, edited_model, weights_copy
 
     def normal_edit(
         self,

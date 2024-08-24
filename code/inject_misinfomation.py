@@ -12,6 +12,8 @@ if __name__ == "__main__":
     parser.add_argument('--data_dir', default='./data', type=str)
     parser.add_argument('--ds_size', type=int)
     parser.add_argument('--long_tail_data', default=False)
+    parser.add_argument('--eval_model', default='meta-llama/Meta-Llama-3-8B-Instruct')
+    parser.add_argument('--eval_model_device', default='cuda:0')
     parser.add_argument('--metrics_save_dir', default='../results/results_commonsense_misinfomation_injection', type=str)
     args = parser.parse_args()
 
@@ -55,6 +57,8 @@ if __name__ == "__main__":
         summary_metrics=True,
         keep_original_weight=True,
         # test_generation=True,
+        eval_model_id=args.eval_model,
+        eval_model_device=args.eval_model_device,
     )
 
     json.dump(metrics, open(os.path.join(args.metrics_save_dir, f'{args.editing_method}_{hparams.model_name.split("/")[-1]}_results.json'), 'w'), indent=4)  # _{args.ds_size}

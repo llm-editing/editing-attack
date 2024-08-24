@@ -1,7 +1,7 @@
 alg_name: "ICL"
 model_name: "meta-llama/Meta-Llama-3-8B-Instruct"
 sentence_model_name: "all-MiniLM-L6-v2"
-device: 1
+device: 0
 results_dir: "./results"
 k: 16
 

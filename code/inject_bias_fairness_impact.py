@@ -18,6 +18,8 @@ if __name__ == "__main__":
     parser.add_argument('--device_edit', default=1, type=int, help='device of the edited model')
     parser.add_argument('--bias_type', default='race', type=str, help='bias type being edited')
     parser.add_argument('--metrics_save_dir', default='../results/results_bias_fairness_impact', type=str)
+    parser.add_argument('--eval_model', default='meta-llama/Meta-Llama-3-8B-Instruct')
+    parser.add_argument('--eval_model_device', default='cuda:0')
     args = parser.parse_args()
 
     if args.editing_method == 'FT-M':
@@ -63,6 +65,8 @@ if __name__ == "__main__":
                 target_new=answers[i],
                 subject=subjects[i],
                 keep_original_weight=False,
+                eval_model_id=args.eval_model,
+                eval_model_device=args.eval_model_device,
             )
             device_edit = hparams.device
             for cross_type in ls_bias_type: # ls_bias_type[:] 

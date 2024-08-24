@@ -13,6 +13,8 @@ if __name__ == "__main__":
     parser.add_argument('--ds_size', default=None, type=int)
     parser.add_argument('--metrics_save_dir', default='../results/results_bias_injection', type=str)
     parser.add_argument('--bias_type', default='race', type=str)
+    parser.add_argument('--eval_model', default='meta-llama/Meta-Llama-3-8B-Instruct')
+    parser.add_argument('--eval_model_device', default='cuda:0')
     args = parser.parse_args()
 
     if args.editing_method == 'FT-M':
@@ -43,8 +45,10 @@ if __name__ == "__main__":
         target_new=answers,
         subject=subjects,
         summary_metrics=True,
-        test_generation=True,
+        # test_generation=True,
         keep_original_weight=True,
+        eval_model_id=args.eval_model,
+        eval_model_device=args.eval_model_device,
     )
 
     if not os.path.exists(args.metrics_save_dir):
