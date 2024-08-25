@@ -89,7 +89,7 @@ data/
 ### Evaluation Setting
 The default evaluation setting in the code uses a local LLM (e.g., Llama3-8b) as the evaluator. We recommend running experiments with at least one GPU with 48 GB of memory (we use NVIDIA RTX A6000 GPUs) or two GPUs with 24 GB of vRAM: one for loading the edited models (both the pre-edit and post-edit models) and one for loading the local evaluation model. The device numbers in `code/hparams` can be modified to adjust the devices used for editing. Note that the experiments in our paper use the GPT-4 API as the evaluator. If you also use API models as the evaluator, one GPU is usually sufficient.
 
-If you use a local LLM as the evaluator, you can modify the device number and the evaluation model through `--eval_model_device` and `--eval_model` as shown in the example below:
+If you use a local LLM (such as Llama3-8b) as the evaluator, you can modify the device number and the evaluation model through `--eval_model_device` and `--eval_model` as shown in the example below:
 ```bash
 python3 inject_misinfomation.py \
     --editing_method=ROME \
