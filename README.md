@@ -87,9 +87,9 @@ data/
 
 
 ### Evaluation Setting
-The default evaluation setting in the code uses a local LLM (e.g., Llama3-8b) as the evaluator. We recommend running experiments with at least one GPU with 48 GB of memory (we use NVIDIA RTX A6000 GPUs) or two GPUs with 24 GB of vRAM: one for loading the edited models (both the pre-edit and post-edit models) and one for loading the local evaluation model. The device numbers in code/hparams can be modified to adjust the devices used for editing. Note that the experiments in our paper use the GPT-4 API as the evaluator. If you also use API models as the evaluator, one GPU is usually sufficient.
+The default evaluation setting in the code uses a local LLM (e.g., Llama3-8b) as the evaluator. We recommend running experiments with at least one GPU with 48 GB of memory (we use NVIDIA RTX A6000 GPUs) or two GPUs with 24 GB of vRAM: one for loading the edited models (both the pre-edit and post-edit models) and one for loading the local evaluation model. The device numbers in `code/hparams` can be modified to adjust the devices used for editing. Note that the experiments in our paper use the GPT-4 API as the evaluator. If you also use API models as the evaluator, one GPU is usually sufficient.
 
-You can modify the device number and the evaluation model through eval_model and eval_model_device as shown in the example below:
+If you use a local LLM as the evaluator, you can modify the device number and the evaluation model through `--eval_model_device` and `--eval_model` as shown in the example below:
 ```bash
 python3 inject_misinfomation.py \
     --editing_method=ROME \
@@ -99,6 +99,17 @@ python3 inject_misinfomation.py \
     --metrics_save_dir=./results_commonsense_misinfomation_injection \
     --eval_model='meta-llama/Meta-Llama-3-8B-Instruct' \
     --eval_model_device='cuda:0'
+```
+If you use a API (such as GPT-4) as the evaluator, one example is as follows:
+
+```bash
+python3 inject_misinfomation.py \
+    --editing_method=ROME \
+    --hparams_dir=./hparams/ROME/llama3-8b \
+    --ds_size=100 \
+    --long_tail_data=False \
+    --metrics_save_dir=./results_commonsense_misinfomation_injection \
+    --eval_model='gpt-4'
 ```
 
 ### Running Experiments
