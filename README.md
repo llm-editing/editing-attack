@@ -100,7 +100,7 @@ python3 inject_misinfomation.py \
     --eval_model='meta-llama/Meta-Llama-3-8B-Instruct' \
     --eval_model_device='cuda:0'
 ```
-If you use a API (such as GPT-4) as the evaluator, one example is as follows:
+If you use a API (such as GPT-4) as the evaluator, you need to set your `YOUR_API_KEY` in Line 60 of `code/editor_new_eval.py`. One example is as follows:
 
 ```bash
 python3 inject_misinfomation.py \
