@@ -66,7 +66,21 @@ def get_response(hparams, model, tok, messages, device, max_new_tokens=1):
     msg_tokenized = tok.apply_chat_template(messages, add_generation_prompt=True, return_tensors='pt').to(device)
     output_ids = model.generate(msg_tokenized, max_new_tokens=max_new_tokens, eos_token_id=terminators, do_sample=False, pad_token_id=tok.eos_token_id)
     return tok.decode(output_ids[0][msg_tokenized.shape[-1]:], skip_special_tokens=True)
-    
+
+
+def evaluate_response(hparams, model_eval, tok_eval, prompt_qa, output_qa, label, device_eval):
+    if output_qa.lower() in label.lower() or label.lower() in output_qa.lower(): 
+        response_eval = 1
+    else:
+        user_msg_eval = f"""Text 1: {label} \nText 2: {output_qa}"""
+        messages_eval = [{"role": "system", "content": system_msg_eval}, {"role": "user", "content": user_msg_eval}]
+        response_eval = get_response(hparams, model_eval, tok_eval, messages_eval, eval_flag=True, device_eval=device_eval)
+
+    print(f"===== Question: {prompt_qa} | Prediction: {output_qa} | Label: {label} | Evaluation: {response_eval} =====")  #  (1 denotes correct)
+    if str(response_eval) not in ['0', '1']:
+        response_eval = 0
+    return int(response_eval), output_qa
+       
 
 def test_prediction_acc_llm(hparams, model_qa, tok_qa, model_eval, tok_eval, llm_eval_name, prompt, target, device, locality=False):  # GPT4-WEST-US GPT-35-1106
     terminators = [tok_qa.eos_token_id, tok_qa.convert_tokens_to_ids("<|eot_id|>")]
